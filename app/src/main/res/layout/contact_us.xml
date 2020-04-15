@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/purple"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <common.DetailsCustomTextView
+            android:textSize="20dp"
+
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Contact Us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+<ImageView
+    android:src="@drawable/logo"
+    android:layout_width="match_parent"
+    android:layout_height="180dp" />
+    <common.Bold_TextView
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:text=""
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="10dp"
+   android:layout_gravity="center"
+
+        android:layout_width="150dp"
+        android:layout_height="1dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <common.DetailsCustomTextView
+        android:layout_marginLeft="10dp"
+        android:text="Address :  "
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <common.DetailsCustomTextView
+            android:layout_marginLeft="10dp"
+            android:text="303, Shyam Kishori Homes,Fraser Road, Patna, Bihar 800001 "
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <View
+        android:layout_margin="10dp"
+        android:background="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <common.DetailsCustomTextView
+            android:layout_marginLeft="10dp"
+            android:text="Mobile :  "
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <common.DetailsCustomTextView
+            android:layout_marginLeft="10dp"
+            android:text="1234567890 "
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_margin="10dp"
+        android:background="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <common.DetailsCustomTextView
+            android:layout_marginLeft="10dp"
+            android:text="Email Id :  "
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <common.DetailsCustomTextView
+            android:layout_marginLeft="10dp"
+            android:text="datateksoftwaresolution@gmail.com "
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

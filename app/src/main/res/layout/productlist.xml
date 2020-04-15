@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/purple"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back"
+                android:layout_marginLeft="-20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <common.DetailsCustomTextView
+                android:textSize="20dp"
+
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/myCart"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:src="@drawable/cart"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-20dp"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <common.DetailsCustomTextView
+          android:visibility="gone"
+                android:background="@drawable/circle"
+                android:id="@+id/cart_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+
+                android:textColor="@color/white"/>
+
+            <common.Bold_TextView
+
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/myCart"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/myCart"
+                android:paddingRight="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text=""
+
+                android:textColor="@color/white"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+
+    <EditText
+        android:background="@drawable/edittext_bg"
+        android:layout_margin="10dp"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/grey"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14dp"
+        android:id="@+id/search"
+        android:hint="Search by product name"
+        android:textColor="@color/black_color"
+        android:layout_height="40dp" />
+        <common.DetailsCustomTextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:text="Category Name"
+            android:gravity="center"
+            android:padding="3dp"
+
+            android:textColor="@color/black_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/productList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+            <ProgressBar
+                android:visibility="gone"
+               android:layout_centerVertical="true"
+                android:id="@+id/progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

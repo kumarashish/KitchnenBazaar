@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/purple"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <common.DetailsCustomTextView
+            android:textSize="20dp"
+
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <View
+        android:background="@color/black_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+android:src="@drawable/default_icon"
+            android:id="@+id/profilePic"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <ImageView
+            android:id="@+id/editProfilePic"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="-5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/profilePic"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/edit_btn" />
+    </RelativeLayout>
+
+    <common.Bold_TextView
+        android:id="@+id/name"
+        android:textSize="16dp"
+        android:textColor="@color/black_color"
+        android:text="Name"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <common.DetailsCustomTextView
+        android:id="@+id/location"
+        android:textSize="14dp"
+        android:textColor="@color/black_color"
+        android:text="Current Location"
+        android:gravity="center"
+        android:maxLines="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <common.DetailsCustomTextView
+                    android:textSize="16dp"
+                    android:textColor="@color/black_color"
+                    android:text="Contact Information"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/email_btn"
+                            android:padding="1dp"
+                            android:src="@drawable/email_black"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" />
+
+
+                        <EditText
+                            android:id="@+id/emailId"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:maxLength="50"
+                            android:textColorHint="@color/grey"
+                            android:textColor="@color/black_color"
+                            android:hint="email id"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/editEmail"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/edit_btn" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/grey"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/mobile_btn"
+                            android:padding="1dp"
+                            android:src="@drawable/mobile_black"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" />
+
+
+                        <EditText
+                            android:id="@+id/mobile"
+                            android:textColor="@color/black_color"
+                            android:gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:textColorHint="@color/grey"
+                            android:maxLength="10"
+                            android:hint="mobile"
+                            android:focusableInTouchMode="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/editMobile"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/edit_btn" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/grey"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/address_btn"
+                            android:padding="1dp"
+                            android:src="@drawable/address_black"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp" />
+
+
+                        <EditText
+                            android:focusableInTouchMode="false"
+                            android:id="@+id/address"
+                            android:gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:maxLength="50"
+                            android:textColorHint="@color/grey"
+                            android:textColor="@color/black_color"
+                            android:hint="address"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/address_icon"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/edit_btn" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/grey"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+            </LinearLayout>
+
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"/>
+
+            <common.DetailsCustomTextView
+                android:layout_marginTop="20dp"
+                android:textSize="10dp"
+                android:id="@+id/appversion"
+                android:textColor="@color/grey"
+                android:text="App version : "
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

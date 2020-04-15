@@ -1,0 +1,862 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\2c67eff8b0b3132ac4e67429671dd034\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\9f088fc14d71c8f334d8bc3a97ad4a2d\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\d88b269a8931896ddb6c1ed8e7435d86\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\9e815017a9633bdc06b6cf8883c53734\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\7ad75c0488514c4666fe540620acbfde\AndroidManifest.xml:2:1-7:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\192ba75a4360b4858f99eb91a2df3934\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\4a556b7305234b6a8696fe1a6097a484\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\65b7418cb07142e20d37804904391d43\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\a40de5c340327ab9246348ec6bcc327f\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\22f557278c0441adf65883b85d047dbd\AndroidManifest.xml:16:1-19:12
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\e7ee7da83e2a1dcda8c55c16f50ec42b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\aeb01e589ba39e002d647cb3967c5f35\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\23a5ea37e9c10ddab0c30150182b214b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-ads:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.4.0.aar\d0909f9b07d99b1601870e44b8b764ff\AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:16:1-33:12
+MERGED from [com.google.android.gms:play-services-tagmanager:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-11.4.0.aar\f0f6c8e687f9c752a9b634b789e309e5\AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\999ad0f8ba731ca8aa41d449ce8b4e40\AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.4.0.aar\4565c80766e98337203310bf02d56fc1\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.4.0.aar\12e0e23a4261fa0da32835ec685d5b47\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\f02f6896bd2ca899b982a08133f5c115\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\c7b7057dd92c3adf7c437d7769a452b6\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\5a36f336d7e06ec3bd2eb56065fc3bec\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\842807154b05bcd05c3bf7f6eee142ba\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\2fd7277956b90ee0fcc8de35cf3b17c6\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\c3b79cd4e205fd47fd2b4cb35627204c\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\003cdb8c556c27abcfe5d95aa97f57e1\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\010df9079c3c285625e95f8dcf0bc21d\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-wallet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.4.0.aar\87ecbafa11c9dbdeee13cc03c4bd69c3\AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\d0babc8e69124808c570cb079d58bae6\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-instantapps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-11.4.0.aar\5bc3c5aaec98b1b72cc0c603673e9bf4\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\be40e0a19a4c630b6901c14cb89f196d\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\6cc5a9192d8d1a87372cbbaffe9e8f89\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\55a53f7a189e1d9e0c63116c9e78d788\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\4bb2cf22a14e9e2a53985766fbaccfed\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\c61a0517c92efa5f13fe212091c4c412\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\2cbbed581e42984105eddf1c7c97b25a\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\9235740db2e12bef9a26802374d88944\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\a0f181e3ccbee9c31f085ab84580f4d5\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\6ef2922b5adf158040c809fb6eee0355\AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.firebase:firebase-database:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-database-11.4.0.aar\76afa0de083e50b4678f2f30a8dd579d\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-database-connection:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.4.0.aar\d26df2e953e089a6b1c0721df955f500\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:16:1-30:12
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:16:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:16:1-35:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:16:1-29:12
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:16:1-50:12
+MERGED from [com.google.firebase:firebase-storage:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.4.0.aar\2bff6f1f7081a43db16c7434b699167b\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-storage-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.4.0.aar\16ff220d06ef8eaa1f86b091891accec\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\ee6215828fa06d107c25d9080d1e39bb\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\0c984ae45d82d93e4c34c4372d72275e\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\49ed41597a294cb0dd720ae3d5789015\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\c00a9c6b7d7ca1b99adacca9962369e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e40010f0655fcc27cbd6db69883ecea8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\72cb1bff7e4519b71da91f859cced2b1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\11c01d3e9dd24170a2c1fcaf09d6ad02\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\b020df5669e1b40e68018b6523624c6f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\palette-v7-25.2.0.aar\018bf9950cc581a8d4dd9e21f1597672\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e4a171b24f2c1376f0d19e6228d7a490\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fc675f42da981abafcd11460bb971eed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c6db1313ced27da32bbca8dc70eeea06\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\bd415926ea329c77cbd456332bcaf525\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\82f1fba32298ad9363490c31c91b6707\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\51db1f5e2fa120903101c67f9fe4e294\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d5e20cec5462e0b30d7c5c3f1d3144c5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ca29d4bb4de4bc98c4ec2ea86665971f\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+	package
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:1-87:12
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:4:5-97
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:4:22-95
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:7:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\6ef2922b5adf158040c809fb6eee0355\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\6ef2922b5adf158040c809fb6eee0355\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:9:22-77
+application
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:10:5-85:19
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\9f088fc14d71c8f334d8bc3a97ad4a2d\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\9f088fc14d71c8f334d8bc3a97ad4a2d\AndroidManifest.xml:5:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\192ba75a4360b4858f99eb91a2df3934\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\192ba75a4360b4858f99eb91a2df3934\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\65b7418cb07142e20d37804904391d43\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\65b7418cb07142e20d37804904391d43\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\a40de5c340327ab9246348ec6bcc327f\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\a40de5c340327ab9246348ec6bcc327f\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\22f557278c0441adf65883b85d047dbd\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\22f557278c0441adf65883b85d047dbd\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\e7ee7da83e2a1dcda8c55c16f50ec42b\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\e7ee7da83e2a1dcda8c55c16f50ec42b\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\23a5ea37e9c10ddab0c30150182b214b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\23a5ea37e9c10ddab0c30150182b214b\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:26:5-31:19
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:26:5-31:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\999ad0f8ba731ca8aa41d449ce8b4e40\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\999ad0f8ba731ca8aa41d449ce8b4e40\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\f02f6896bd2ca899b982a08133f5c115\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\f02f6896bd2ca899b982a08133f5c115\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\c7b7057dd92c3adf7c437d7769a452b6\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\c7b7057dd92c3adf7c437d7769a452b6\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\5a36f336d7e06ec3bd2eb56065fc3bec\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\5a36f336d7e06ec3bd2eb56065fc3bec\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\842807154b05bcd05c3bf7f6eee142ba\AndroidManifest.xml:5:3-6:17
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\842807154b05bcd05c3bf7f6eee142ba\AndroidManifest.xml:5:3-6:17
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\2fd7277956b90ee0fcc8de35cf3b17c6\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\2fd7277956b90ee0fcc8de35cf3b17c6\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\c3b79cd4e205fd47fd2b4cb35627204c\AndroidManifest.xml:5:3-17
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\c3b79cd4e205fd47fd2b4cb35627204c\AndroidManifest.xml:5:3-17
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\003cdb8c556c27abcfe5d95aa97f57e1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\003cdb8c556c27abcfe5d95aa97f57e1\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\010df9079c3c285625e95f8dcf0bc21d\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\010df9079c3c285625e95f8dcf0bc21d\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\d0babc8e69124808c570cb079d58bae6\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\d0babc8e69124808c570cb079d58bae6\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\be40e0a19a4c630b6901c14cb89f196d\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\be40e0a19a4c630b6901c14cb89f196d\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\6cc5a9192d8d1a87372cbbaffe9e8f89\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\6cc5a9192d8d1a87372cbbaffe9e8f89\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\55a53f7a189e1d9e0c63116c9e78d788\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\55a53f7a189e1d9e0c63116c9e78d788\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\4bb2cf22a14e9e2a53985766fbaccfed\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\4bb2cf22a14e9e2a53985766fbaccfed\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\c61a0517c92efa5f13fe212091c4c412\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\c61a0517c92efa5f13fe212091c4c412\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\2cbbed581e42984105eddf1c7c97b25a\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\2cbbed581e42984105eddf1c7c97b25a\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\9235740db2e12bef9a26802374d88944\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\9235740db2e12bef9a26802374d88944\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\a0f181e3ccbee9c31f085ab84580f4d5\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\a0f181e3ccbee9c31f085ab84580f4d5\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\6ef2922b5adf158040c809fb6eee0355\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\6ef2922b5adf158040c809fb6eee0355\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\ee6215828fa06d107c25d9080d1e39bb\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\ee6215828fa06d107c25d9080d1e39bb\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\0c984ae45d82d93e4c34c4372d72275e\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\0c984ae45d82d93e4c34c4372d72275e\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\49ed41597a294cb0dd720ae3d5789015\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\49ed41597a294cb0dd720ae3d5789015\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\palette-v7-25.2.0.aar\018bf9950cc581a8d4dd9e21f1597672\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\palette-v7-25.2.0.aar\018bf9950cc581a8d4dd9e21f1597672\AndroidManifest.xml:22:5-23:19
+	android:supportsRtl
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:15:9-43
+	android:icon
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:12:9-38
+	android:allowBackup
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:11:9-36
+	android:theme
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:17:9-40
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:14:9-44
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:18:9-20:68
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\49ed41597a294cb0dd720ae3d5789015\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\49ed41597a294cb0dd720ae3d5789015\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:20:13-66
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:19:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:21:9-23:70
+	android:value
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:23:13-68
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:22:13-58
+activity#launchingscreens.Splash
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:24:9-33:20
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:26:13-49
+	android:theme
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:27:13-56
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:25:13-51
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:28:13-32:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:31:27-74
+activity#com.kitchenbazaar.DashBoard
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:34:9-36:68
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:35:13-49
+	android:theme
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:36:13-56
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:34:19-44
+activity#launchingscreens.Login
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:37:9-39:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:37:19-56
+activity#launchingscreens.SignUp
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:40:9-42:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:41:13-49
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:40:19-57
+activity#launchingscreens.ForgetPassword
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:43:9-45:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:44:13-49
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:43:19-65
+activity#com.kitchenbazaar.ProductList
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:46:9-49:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:48:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:47:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:46:19-46
+activity#com.kitchenbazaar.MyCart
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:50:9-53:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:52:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:51:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:50:19-41
+activity#com.kitchenbazaar.ContactUs
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:54:9-57:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:56:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:55:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:54:19-44
+activity#com.kitchenbazaar.CurrentOrder
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:58:9-61:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:60:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:59:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:58:19-47
+activity#com.kitchenbazaar.History
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:62:9-65:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:64:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:63:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:62:19-42
+activity#com.kitchenbazaar.MyAddress
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:66:9-69:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:68:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:67:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:66:19-44
+activity#com.kitchenbazaar.MyProfile
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:70:9-73:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:72:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:71:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:70:19-44
+activity#com.kitchenbazaar.Offers
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:74:9-77:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:76:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:75:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:74:19-41
+activity#com.kitchenbazaar.OrderDetails
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:78:9-81:15
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:80:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:79:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:78:19-47
+activity#com.kitchenbazaar.LocationSearch
+ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:82:9-84:51
+	android:screenOrientation
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:84:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:83:13-60
+	android:name
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml:82:19-49
+uses-sdk
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\2c67eff8b0b3132ac4e67429671dd034\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\2c67eff8b0b3132ac4e67429671dd034\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\9f088fc14d71c8f334d8bc3a97ad4a2d\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\9f088fc14d71c8f334d8bc3a97ad4a2d\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:design:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\d88b269a8931896ddb6c1ed8e7435d86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\d88b269a8931896ddb6c1ed8e7435d86\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\9e815017a9633bdc06b6cf8883c53734\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\9e815017a9633bdc06b6cf8883c53734\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\7ad75c0488514c4666fe540620acbfde\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\7ad75c0488514c4666fe540620acbfde\AndroidManifest.xml:5:5-43
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\192ba75a4360b4858f99eb91a2df3934\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\192ba75a4360b4858f99eb91a2df3934\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\4a556b7305234b6a8696fe1a6097a484\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\4a556b7305234b6a8696fe1a6097a484\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\65b7418cb07142e20d37804904391d43\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\65b7418cb07142e20d37804904391d43\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\a40de5c340327ab9246348ec6bcc327f\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\a40de5c340327ab9246348ec6bcc327f\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\22f557278c0441adf65883b85d047dbd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\22f557278c0441adf65883b85d047dbd\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\e7ee7da83e2a1dcda8c55c16f50ec42b\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\e7ee7da83e2a1dcda8c55c16f50ec42b\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\aeb01e589ba39e002d647cb3967c5f35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\aeb01e589ba39e002d647cb3967c5f35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\23a5ea37e9c10ddab0c30150182b214b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\23a5ea37e9c10ddab0c30150182b214b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-ads:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.4.0.aar\d0909f9b07d99b1601870e44b8b764ff\AndroidManifest.xml:17:5-94
+MERGED from [com.google.android.gms:play-services-ads:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.4.0.aar\d0909f9b07d99b1601870e44b8b764ff\AndroidManifest.xml:17:5-94
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-11.4.0.aar\f0f6c8e687f9c752a9b634b789e309e5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-11.4.0.aar\f0f6c8e687f9c752a9b634b789e309e5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\999ad0f8ba731ca8aa41d449ce8b4e40\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\999ad0f8ba731ca8aa41d449ce8b4e40\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.4.0.aar\4565c80766e98337203310bf02d56fc1\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.4.0.aar\4565c80766e98337203310bf02d56fc1\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.4.0.aar\12e0e23a4261fa0da32835ec685d5b47\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.4.0.aar\12e0e23a4261fa0da32835ec685d5b47\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\f02f6896bd2ca899b982a08133f5c115\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\f02f6896bd2ca899b982a08133f5c115\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\c7b7057dd92c3adf7c437d7769a452b6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\c7b7057dd92c3adf7c437d7769a452b6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\5a36f336d7e06ec3bd2eb56065fc3bec\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\5a36f336d7e06ec3bd2eb56065fc3bec\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\842807154b05bcd05c3bf7f6eee142ba\AndroidManifest.xml:4:3-41
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\842807154b05bcd05c3bf7f6eee142ba\AndroidManifest.xml:4:3-41
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\2fd7277956b90ee0fcc8de35cf3b17c6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\2fd7277956b90ee0fcc8de35cf3b17c6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\c3b79cd4e205fd47fd2b4cb35627204c\AndroidManifest.xml:3:3-41
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\c3b79cd4e205fd47fd2b4cb35627204c\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\003cdb8c556c27abcfe5d95aa97f57e1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\003cdb8c556c27abcfe5d95aa97f57e1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\010df9079c3c285625e95f8dcf0bc21d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\010df9079c3c285625e95f8dcf0bc21d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.4.0.aar\87ecbafa11c9dbdeee13cc03c4bd69c3\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.4.0.aar\87ecbafa11c9dbdeee13cc03c4bd69c3\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\d0babc8e69124808c570cb079d58bae6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\d0babc8e69124808c570cb079d58bae6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-11.4.0.aar\5bc3c5aaec98b1b72cc0c603673e9bf4\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-11.4.0.aar\5bc3c5aaec98b1b72cc0c603673e9bf4\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\be40e0a19a4c630b6901c14cb89f196d\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\be40e0a19a4c630b6901c14cb89f196d\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\6cc5a9192d8d1a87372cbbaffe9e8f89\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\6cc5a9192d8d1a87372cbbaffe9e8f89\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\55a53f7a189e1d9e0c63116c9e78d788\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\55a53f7a189e1d9e0c63116c9e78d788\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\4bb2cf22a14e9e2a53985766fbaccfed\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\4bb2cf22a14e9e2a53985766fbaccfed\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\c61a0517c92efa5f13fe212091c4c412\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\c61a0517c92efa5f13fe212091c4c412\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\2cbbed581e42984105eddf1c7c97b25a\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\2cbbed581e42984105eddf1c7c97b25a\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\9235740db2e12bef9a26802374d88944\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\9235740db2e12bef9a26802374d88944\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\a0f181e3ccbee9c31f085ab84580f4d5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\a0f181e3ccbee9c31f085ab84580f4d5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\6ef2922b5adf158040c809fb6eee0355\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\6ef2922b5adf158040c809fb6eee0355\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-database:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-database-11.4.0.aar\76afa0de083e50b4678f2f30a8dd579d\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-database-11.4.0.aar\76afa0de083e50b4678f2f30a8dd579d\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.4.0.aar\d26df2e953e089a6b1c0721df955f500\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.4.0.aar\d26df2e953e089a6b1c0721df955f500\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-storage:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.4.0.aar\2bff6f1f7081a43db16c7434b699167b\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.4.0.aar\2bff6f1f7081a43db16c7434b699167b\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.4.0.aar\16ff220d06ef8eaa1f86b091891accec\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.4.0.aar\16ff220d06ef8eaa1f86b091891accec\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\ee6215828fa06d107c25d9080d1e39bb\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\ee6215828fa06d107c25d9080d1e39bb\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\0c984ae45d82d93e4c34c4372d72275e\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\0c984ae45d82d93e4c34c4372d72275e\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\49ed41597a294cb0dd720ae3d5789015\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\49ed41597a294cb0dd720ae3d5789015\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\c00a9c6b7d7ca1b99adacca9962369e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\c00a9c6b7d7ca1b99adacca9962369e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e40010f0655fcc27cbd6db69883ecea8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e40010f0655fcc27cbd6db69883ecea8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\72cb1bff7e4519b71da91f859cced2b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\72cb1bff7e4519b71da91f859cced2b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\11c01d3e9dd24170a2c1fcaf09d6ad02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\11c01d3e9dd24170a2c1fcaf09d6ad02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\b020df5669e1b40e68018b6523624c6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\b020df5669e1b40e68018b6523624c6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\palette-v7-25.2.0.aar\018bf9950cc581a8d4dd9e21f1597672\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\palette-v7-25.2.0.aar\018bf9950cc581a8d4dd9e21f1597672\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e4a171b24f2c1376f0d19e6228d7a490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e4a171b24f2c1376f0d19e6228d7a490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fc675f42da981abafcd11460bb971eed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fc675f42da981abafcd11460bb971eed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c6db1313ced27da32bbca8dc70eeea06\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c6db1313ced27da32bbca8dc70eeea06\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\bd415926ea329c77cbd456332bcaf525\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\bd415926ea329c77cbd456332bcaf525\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\82f1fba32298ad9363490c31c91b6707\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\82f1fba32298ad9363490c31c91b6707\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\51db1f5e2fa120903101c67f9fe4e294\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\51db1f5e2fa120903101c67f9fe4e294\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d5e20cec5462e0b30d7c5c3f1d3144c5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d5e20cec5462e0b30d7c5c3f1d3144c5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ca29d4bb4de4bc98c4ec2ea86665971f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ca29d4bb4de4bc98c4ec2ea86665971f\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.google.android.gms:play-services-ads:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.4.0.aar\d0909f9b07d99b1601870e44b8b764ff\AndroidManifest.xml:17:42-92
+	android:targetSdkVersion
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\src\main\AndroidManifest.xml
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\ca2aab1cda48beb5d9a39c0ff106ddf3\AndroidManifest.xml:7:18-90
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\6cc5a9192d8d1a87372cbbaffe9e8f89\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\6cc5a9192d8d1a87372cbbaffe9e8f89\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:20:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:25:9-257
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:25:231-255
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\c851774a9084ac0f7fc0d24972404fe1\AndroidManifest.xml:25:19-71
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\f527ac1e9f16d46cb2f2a532b519d028\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:24:22-65
+receiver#com.google.android.gms.analytics.AnalyticsReceiver
+ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:27:9-28:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:27:85-107
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:27:108-132
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:27:19-84
+service#com.google.android.gms.analytics.AnalyticsService
+ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:29:9-132
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:29:83-105
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:29:106-130
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:29:18-82
+service#com.google.android.gms.analytics.AnalyticsJobService
+ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:30:9-192
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:30:143-165
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:30:166-190
+	android:permission
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:30:86-142
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\b0ae3a2761bdb85328eb73011400e1cd\AndroidManifest.xml:30:18-85
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:20:19-50
+intent-filter#action:name:com.google.android.gms.appinvite.ACTION_PREVIEW+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:22:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:23:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\b77a8f3939e6aacdfd11253012185972\AndroidManifest.xml:23:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\7aa101e9af5405acab1ba0913ba70536\AndroidManifest.xml:24:18-63
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\ef49d19f599e153f0fd51535c38fecc2\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:22:5-81
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\5bbe21d7b1940bdc7b1d1fe0440f5e9d\AndroidManifest.xml:20:22-79
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\3715ce025b0518cfe0909be0894ced9f\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\3e9f0860471e01cdfc4ee2d46dd2f0ca\AndroidManifest.xml:19:19-85
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:23:18-87
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\1afe3f434759730d80f4f1f15064a663\AndroidManifest.xml:25:25-75
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:25:118-142
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:25:94-117
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:25:19-93
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.${applicationId}
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:26:13-31:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.com.kitchenbazaar
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:28:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\fef4e88c7e7586e1aea84cf6ed67b60b\AndroidManifest.xml:30:27-75
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:27:17-104
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:27:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\e85c808004c61596971ef11f37352797\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\d72c16bc2246c33117b62c2da79c8afd\AndroidManifest.xml:33:16-90
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:24:17-71
+permission#com.kitchenbazaar.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:26:22-76
+uses-permission#com.kitchenbazaar.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:30:19-84
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:31:13-34:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.kitchenbazaar
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:33:27-58
+category#com.kitchenbazaar
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:43:18-82
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:44:13-46:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:44:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:45:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\1d6f5fd9ef95e82ef4a7dfebd6d9c43a\AndroidManifest.xml:45:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\Naveen Sunkari\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\d2f0e9df550170ef762c9b458688dcce\AndroidManifest.xml:6:79-143

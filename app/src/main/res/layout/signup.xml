@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:background="@color/purple"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back"
+                android:layout_marginLeft="-20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <common.DetailsCustomTextView
+                android:textSize="20dp"
+
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Sign Up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <ImageView
+
+                    android:src="@drawable/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/username"
+                        android:tint="@color/purple"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <EditText
+                        android:textColor="@color/purple"
+                        android:id="@+id/Name"
+                        android:paddingLeft="15dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:hint="Name"
+                        android:textColorHint="@color/purple"
+                        android:textSize="14dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:tint="@color/purple"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/email_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <EditText
+                        android:textColor="@color/purple"
+                        android:id="@+id/emailId"
+                        android:paddingLeft="15dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:hint="Email"
+                        android:textColorHint="@color/purple"
+                        android:textSize="14dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:tint="@color/purple"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/phone_icon"
+                        android:scaleType="fitXY"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <EditText
+                        android:textColor="@color/purple"
+                        android:id="@+id/mobile"
+                        android:paddingLeft="15dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:hint="Mobile"
+                        android:textColorHint="@color/purple"
+                        android:textSize="14dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:tint="@color/purple"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/address"
+                        android:scaleType="fitXY"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <EditText
+
+                        android:textColor="@color/purple"
+                        android:id="@+id/address"
+                        android:paddingLeft="15dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:hint="Address"
+                        android:textColorHint="@color/purple"
+                        android:textSize="14dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:tint="@color/purple"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/pwd_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <EditText
+                        android:textColor="@color/purple"
+                        android:id="@+id/password"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:hint="Password"
+                        android:textSize="14dp"
+                        android:textColorHint="@color/purple"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/submit_btn"
+                        android:textColor="@color/white"
+                        android:text="Submit"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/purple_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

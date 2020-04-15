@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <common.Bold_TextView
+        android:textColor="@color/white"
+        android:text="Your location"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <common.DetailsCustomTextView
+        android:id="@+id/location"
+        android:textColor="@color/white"
+        android:text="ABc,bcdd"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+        <ImageView
+
+            android:id="@+id/edit_location"
+            android:src="@drawable/edit_location_icon"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

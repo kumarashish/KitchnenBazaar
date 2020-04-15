@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.backendless:backendless:5.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/5.0.0/c68711dcc0f0fd1567dda0770eeedb1923fdb0a7/backendless-5.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.backendless/backendless/5.0.0/d0899d7f53eee72f2800282485771051ee0fa71f/backendless-5.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
