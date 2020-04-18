@@ -7,7 +7,8 @@ package common;
 public class Common {
     public static double storeLat=25.619273;
     public static double storeLon=85.106410;
-
+    public static String storeName="Kitchen Bazaar";
+    public static String storeNumber="1234567890";
     public static String name="GrocWorldName";
     public static String email="GrocWorldemail";
     public static String mobile="GrocWorldphoneNumber";

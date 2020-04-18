@@ -80,10 +80,10 @@ public class OrderAdapter extends BaseAdapter {
             if ((Integer.parseInt(model.getOrderstatus()) != 1) ) {
                 holder.paymentstatus.setVisibility(View.VISIBLE);
                 if (model.isPaymentDone()) {
-                    holder.paymentstatus.setText("Payment of Rs" + model.getAmount() + " Received By Grocworld");
+                    holder.paymentstatus.setText("Payment of Rs " + model.getAmount() + " Received By "+Common.storeName);
                 } else {
                     if(Integer.parseInt(model.getOrderstatus())!=4) {
-                        holder.paymentstatus.setText("Please make payment of  Rs " + model.getAmount() + " Via paytm on 9044213970 for placed order");
+                        holder.paymentstatus.setText("Please make payment of  Rs " + model.getAmount() + " Via paytm/Gpay on "+Common.storeNumber+" for placed order");
                     }else{
                         holder.paymentstatus.setVisibility(View.GONE);
                     }
