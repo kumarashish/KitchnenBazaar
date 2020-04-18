@@ -302,6 +302,7 @@ public class MyCart extends Activity implements View.OnClickListener{
                     if (pincode.getText().length() == 6) {
                         if (isDeliveryAvailable(Integer.parseInt(pincode.getText().toString()))) {
                             progressBar.setVisibility(View.VISIBLE);
+
                             placeOrder(address.getText().toString(), pincode.getText().toString());
                             mBottomSheetDialog.cancel();
                         } else {
@@ -332,7 +333,7 @@ public class MyCart extends Activity implements View.OnClickListener{
     public boolean isDeliveryAvailable(int pincode)
     {
         boolean status=false;
-        if((pincode==800001)||(pincode==500089))
+        if((pincode==800001)||(pincode==500089)||(pincode==500089))
         {
             status=true;
         }

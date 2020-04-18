@@ -136,9 +136,9 @@ int i=0;
 public void checkData()
 {  location.setText(controller.getAddress());
     if (Utils.distance(controller.getCurrentLocation().getLatitude(), controller.getCurrentLocation().getLongitude(), Common.storeLat, Common.storeLon, "K") < 10000.0) {
-//
-       // getData();
-       // getTrending();
+
+        getData();
+        getTrending();
     }else{
         showLocationAlert();
     }
@@ -240,6 +240,7 @@ public void checkData()
                 controller.setLogout();
                 updateheader();
                 Toast.makeText(DashBoard.this,"Logged out sucessfully",Toast.LENGTH_SHORT).show();
+                dialog.cancel();
             }
         });
         dialog.show();
@@ -295,6 +296,7 @@ public void updateheader()
     }
     public void getData() {
         progress.setVisibility(View.VISIBLE);
+        progress.bringToFront();
         Thread T = new Thread(new Runnable() {
             @Override
             public void run() {

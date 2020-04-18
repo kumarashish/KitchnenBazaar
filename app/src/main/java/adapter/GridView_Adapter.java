@@ -2,6 +2,8 @@ package adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,17 +70,20 @@ callback=(OnCategorySelected)c;
         convertView.setTag(holder);
         final ProgressBar bar = holder.progressBar;
         final ImageView image = holder.image;
-        Picasso.with(mContext).load(model.getCategoryImage()).resize(110, 100).into(holder.image, new Callback() {
-            @Override
-            public void onSuccess() {
-                bar.setVisibility(View.GONE);
-            }
-
-            @Override
-            public void onError() {
-
-            }
-        });
+        bar.setVisibility(View.GONE);
+//      //  Picasso.with(mContext).load(model.getCategoryImage()).placeholder(R.drawable.no_image).resize(110, 100).into(holder.image, new Callback() {
+//            @Override
+//            public void onSuccess() {
+//                bar.setVisibility(View.GONE);
+//            }
+//
+//
+//            public void onError() {
+//
+//                    bar.setVisibility(View.GONE);
+//
+//            }
+//        });
         holder.name.setText(model.getCategoryName());
         image.setOnClickListener(new View.OnClickListener() {
             @Override

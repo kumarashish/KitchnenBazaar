@@ -131,6 +131,8 @@
                 android:background="#e5e5e5"
                 android:horizontalSpacing="1dp"
                 android:verticalSpacing="1dp"
+                android:fadingEdgeLength="0px"
+                android:listSelector="@null"
                 android:numColumns="3"
                 android:layout_margin="1dp"
                 android:layout_width="match_parent"

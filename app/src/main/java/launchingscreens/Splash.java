@@ -179,7 +179,7 @@ public class Splash extends Activity implements LocationListener,
 //
 //            }
             controller.setAddress(address, location);
-            startActivity(new Intent(Splash.this, Login.class));
+            startActivity(new Intent(Splash.this, DashBoard.class));
             finish();
         }
     }

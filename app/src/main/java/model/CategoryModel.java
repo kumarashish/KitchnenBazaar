@@ -14,11 +14,10 @@ public class CategoryModel {
     int categoryType;
     String categoryImage;
 public CategoryModel(Map map){
-    categoryId= (String)map.get("Id");
+    categoryId= (String)map.get("CategoryId");
     categoryName= (String) map.get("CategoryName");
     categoryImage= (String) map.get("CategoryImage");
     categoryType= (int)map.get("CategoryType");
-
 
 }
     public void setCategoryId(int categoryId) {

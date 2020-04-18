@@ -15,7 +15,7 @@ public class Common {
     public static String userId="GrocWorldownerId";
     public static String sendSMSBaseUrl="https://www.ontimesms.in/Rest/AIwebservice/Bulk?";
     /*--------------------------------------------------------------*/
-    public static String categoryTable="Category12";
+    public static String categoryTable="Category";
     public static String categoryColumn="CategoryType";
     public static String categoryName="CategoryName";
     public static String categoryId="CategoryId";
