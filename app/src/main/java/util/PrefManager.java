@@ -21,12 +21,11 @@ public class PrefManager {
 
     // shared pref mode
     int PRIVATE_MODE = 0;
-    private static final String PREF_NAME = "GrocWorld";
-    private static final String LoggedIn = "GrocWorldtUserLoggedIn";
-    private static final String FcmToken = "GrocWorldFcmToken";
-    private static final String UserToken = "GrocWorldUSerToken";
-    private static final String rememberId = "GrocWorldUSerRemId";
-    private static final String rememberpassword = "GrocWorldUSerRemPass";
+    private static final String PREF_NAME = Common.storeName;
+    private static final String LoggedIn = Common.storeName+"UserLoggedIn";
+    private static final String FcmToken = Common.storeName+"FcmToken";
+    private static final String rememberId = Common.storeName+"USerRemId";
+    private static final String rememberpassword = Common.storeName+"UserRemPass";
 
     private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 

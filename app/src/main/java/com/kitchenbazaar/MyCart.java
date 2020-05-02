@@ -61,6 +61,10 @@ public class MyCart extends Activity implements View.OnClickListener{
     LinearLayout footer;
     @BindView(R.id.progressbar)
     ProgressBar progressBar;
+    String customer_address;
+    String customer_pincode;
+    String customerName;
+    String customerMobileNumber;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mycart);
@@ -132,7 +136,7 @@ public class MyCart extends Activity implements View.OnClickListener{
         Thread T1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                new WebApiCall(MyCart.this).getData(Common.getSendSMSUrl(controller.getUserProfil().getPhoneNumber(), "Thank you for placing order with Grocworld,your order will be in pending state until store owner accepts it"));
+                new WebApiCall(MyCart.this).getData(Common.getSendSMSUrl(customerMobileNumber, "Thank you for placing order with "+Common.storeName+",your order will be in pending state until store owner accepts it"));
 
             }
         });
@@ -140,7 +144,7 @@ public class MyCart extends Activity implements View.OnClickListener{
         Thread T2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                new WebApiCall(MyCart.this).getData(Common.getSendSMSUrl("8005300408", "You have received one new order,please check com.com.kitchenbazaar admin app for order details."));
+                new WebApiCall(MyCart.this).getData(Common.getSendSMSUrl(Common.storeNumber, "You have received one new order from "+customerName+" \nAddress: "+customer_address+", "+customer_pincode+"\n Mobile number:"+customerMobileNumber+", Please check "+Common.storeName+" admin app for order details."));
 
             }
         });
@@ -204,7 +208,11 @@ public class MyCart extends Activity implements View.OnClickListener{
    }
 
     public void placeOrder(String address,String pincode) {
+        customer_address=address;
+        customer_pincode=pincode;
         UserProfile profile = controller.getUserProfil();
+        customerMobileNumber=profile.getPhoneNumber();
+        customerName=profile.getName();
         HashMap map = null;
         map = new HashMap();
         map.put("name", profile.getName());
@@ -302,7 +310,6 @@ public class MyCart extends Activity implements View.OnClickListener{
                     if (pincode.getText().length() == 6) {
                         if (isDeliveryAvailable(Integer.parseInt(pincode.getText().toString()))) {
                             progressBar.setVisibility(View.VISIBLE);
-
                             placeOrder(address.getText().toString(), pincode.getText().toString());
                             mBottomSheetDialog.cancel();
                         } else {
@@ -333,7 +340,7 @@ public class MyCart extends Activity implements View.OnClickListener{
     public boolean isDeliveryAvailable(int pincode)
     {
         boolean status=false;
-        if((pincode==800001)||(pincode==500089)||(pincode==500089))
+        if((pincode==800001)||(pincode==500089)||(pincode==500008)||(pincode==209625)||(pincode==209601)||(pincode==209203))
         {
             status=true;
         }

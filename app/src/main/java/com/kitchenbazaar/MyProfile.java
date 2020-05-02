@@ -3,14 +3,27 @@ package com.kitchenbazaar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.backendless.Backendless;
+import com.backendless.IDataStore;
+import com.backendless.async.callback.AsyncCallback;
+import com.backendless.exceptions.BackendlessFault;
+import com.backendless.persistence.DataQueryBuilder;
+
+import java.util.List;
+import java.util.Map;
+
+import adapter.OrderItemAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import common.AppController;
+import common.Common;
+import model.OrderItemModel;
 import model.UserProfile;
 import util.Utils;
 
@@ -34,6 +47,7 @@ public class MyProfile extends Activity implements View.OnClickListener {
     TextView name;
     @BindView(R.id.appversion)
     TextView appVersion;
+    String userId;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
