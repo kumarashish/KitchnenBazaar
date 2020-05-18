@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Naveen Sunkari\\StudioProjects\\Kitchen_Bazaar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-appinvite-11.4.0.aar\\b77a8f3939e6aacdfd11253012185972\\res\\values-v11\\values.xml",
+                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-appinvite-11.4.0.aar\\3084ca457631e305d0b7f8cfb1776723\\res\\values-v11\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

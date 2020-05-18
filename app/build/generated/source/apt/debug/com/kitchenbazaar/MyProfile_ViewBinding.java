@@ -1,14 +1,15 @@
 // Generated code from Butter Knife. Do not modify!
 package com.kitchenbazaar;
 
-import android.support.annotation.CallSuper;
-import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import androidx.annotation.CallSuper;
+import androidx.annotation.UiThread;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
@@ -31,6 +32,7 @@ public class MyProfile_ViewBinding implements Unbinder {
     target.location = Utils.findRequiredViewAsType(source, R.id.location, "field 'location'", TextView.class);
     target.name = Utils.findRequiredViewAsType(source, R.id.name, "field 'name'", TextView.class);
     target.appVersion = Utils.findRequiredViewAsType(source, R.id.appversion, "field 'appVersion'", TextView.class);
+    target.profilePic = Utils.findRequiredViewAsType(source, R.id.profilePic, "field 'profilePic'", CircleImageView.class);
   }
 
   @Override
@@ -47,5 +49,6 @@ public class MyProfile_ViewBinding implements Unbinder {
     target.location = null;
     target.name = null;
     target.appVersion = null;
+    target.profilePic = null;
   }
 }

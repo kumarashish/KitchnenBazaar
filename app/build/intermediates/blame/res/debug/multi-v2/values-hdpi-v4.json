@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Naveen Sunkari\\StudioProjects\\Kitchen_Bazaar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\aeb01e589ba39e002d647cb3967c5f35\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\1c896d5a7976deb9df1965b233b338ac\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

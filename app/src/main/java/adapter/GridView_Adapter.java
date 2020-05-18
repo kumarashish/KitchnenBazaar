@@ -2,8 +2,6 @@ package adapter;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,8 +11,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.kitchenbazaar.R;
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 

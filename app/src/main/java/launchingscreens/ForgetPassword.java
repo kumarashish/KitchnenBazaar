@@ -2,7 +2,7 @@ package launchingscreens;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,21 +10,20 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.backendless.Backendless;
-import com.backendless.async.callback.AsyncCallback;
-import com.backendless.exceptions.BackendlessFault;
 import com.kitchenbazaar.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import common.AppController;
+import common.Common;
+import interfaces.WebApiResponseCallback;
 
 
 /**
  * Created by ashish.kumar on 05-07-2018.
  */
 
-public class ForgetPassword extends Activity implements View.OnClickListener{
+public class ForgetPassword extends Activity implements View.OnClickListener, WebApiResponseCallback {
     @BindView(R.id.back)
     ImageView back;
     @BindView(R.id.emailId)
@@ -57,7 +56,7 @@ switch (view.getId())
         onBackPressed();
         break;
     case R.id.submit_btn:
-        if(controller.getValidation().isEmailIdValid(emailId))
+        if(controller.getValidation().isPhoneNumberValid(emailId))
         {
             if(util.Utils.isNetworkAvailable(ForgetPassword.this))
             {
@@ -81,16 +80,41 @@ switch (view.getId())
         progressbar.setVisibility(View.VISIBLE);
         disableAll();
         progressbar.bringToFront();
-        Backendless.UserService.restorePassword(emailId.getText().toString(), new AsyncCallback<Void>() {
-            public void handleResponse(Void response) {
+        controller.getWebApiCall().postDataWithHeader(Common.forgetPasswordUrl,Common.forgetPasswordKeys,new String[]{emailId.getText().toString()},this);
+//        Backendless.UserService.restorePassword(emailId.getText().toString(), new AsyncCallback<Void>() {
+//            public void handleResponse(Void response) {
+//                progressbar.setVisibility(View.GONE);
+//                Toast.makeText(ForgetPassword.this, "Your password has been reset and new password has been send to ur email id", Toast.LENGTH_SHORT).show();
+//                finish();
+//            }
+//
+//            public void handleFault(BackendlessFault fault) {
+//                progressbar.setVisibility(View.GONE);
+//                Toast.makeText(ForgetPassword.this, fault.getMessage(), Toast.LENGTH_SHORT).show();
+//                enableAll();
+//            }
+//        });
+    }
+
+    @Override
+    public void onSucess(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
                 progressbar.setVisibility(View.GONE);
-                Toast.makeText(ForgetPassword.this, "Your password has been reset and new password has been send to ur email id", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ForgetPassword.this, "Your password has been send to ur mobile number", Toast.LENGTH_SHORT).show();
                 finish();
             }
+        });
+    }
 
-            public void handleFault(BackendlessFault fault) {
+    @Override
+    public void onError(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(ForgetPassword.this, value, Toast.LENGTH_SHORT).show();
                 progressbar.setVisibility(View.GONE);
-                Toast.makeText(ForgetPassword.this, fault.getMessage(), Toast.LENGTH_SHORT).show();
                 enableAll();
             }
         });

@@ -3,7 +3,7 @@ package launchingscreens;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -12,24 +12,25 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.backendless.Backendless;
-import com.backendless.BackendlessUser;
-import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.kitchenbazaar.DashBoard;
 import com.kitchenbazaar.R;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import common.AppController;
-
+import common.Common;
+import interfaces.WebApiResponseCallback;
 
 
 /**
  * Created by ashish.kumar on 04-07-2018.
  */
 
-public class Login  extends Activity implements View.OnClickListener{
+public class Login  extends Activity implements View.OnClickListener, WebApiResponseCallback {
     @BindView(R.id.login_btn)
     Button login;
     @BindView(R.id.signup)
@@ -89,7 +90,7 @@ public class Login  extends Activity implements View.OnClickListener{
 
     public boolean isAllFieldsValidated() {
         boolean status = false;
-        if (controller.getValidation().isEmailIdValid(emailId)) {
+        if (controller.getValidation().isPhoneNumberValid(emailId)) {
             if (password.length() > 3) {
                 status = true;
             }
@@ -112,32 +113,65 @@ public class Login  extends Activity implements View.OnClickListener{
         disableAll();
         progressbar.setVisibility(View.VISIBLE);
         progressbar.bringToFront();
-        Backendless.UserService.login(emailId.getText().toString(), password.getText().toString(), new AsyncCallback<BackendlessUser>() {
-            public void handleResponse(BackendlessUser user) {
-                // user has been logged in
+//        Backendless.UserService.login(emailId.getText().toString(), password.getText().toString(), new AsyncCallback<BackendlessUser>() {
+//            public void handleResponse(BackendlessUser user) {
+//                // user has been logged in
+//                Toast.makeText(Login.this, "Logged in successfully.", Toast.LENGTH_SHORT).show();
+//                progressbar.setVisibility(View.GONE);
+//                controller.setUserLoggedIn(true);
+//                controller.setUserProfile(user);
+//                if (rememberme.isChecked()) {
+//                    controller.setRememberId(emailId.getText().toString(), password.getText().toString());
+//                } else {
+//                    controller.setRememberId("", "");
+//                }
+////                Intent resultIntent = new Intent();
+////                setResult(Activity.RESULT_OK, resultIntent);
+////                finish();
+//                startActivity(new Intent(Login.this, DashBoard.class));
+        controller.getWebApiCall().postDataWithHeader(Common.loginUrl,Common.loginKeys,new String[]{emailId.getText().toString(),password.getText().toString()},this);
+            }
+
+            public void handleFault(BackendlessFault fault) {
+                // login failed, to get the error code call fault.getCode()
+
+            }
+
+
+    @Override
+    public void onSucess(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
                 Toast.makeText(Login.this, "Logged in successfully.", Toast.LENGTH_SHORT).show();
                 progressbar.setVisibility(View.GONE);
                 controller.setUserLoggedIn(true);
-                controller.setUserProfile(user);
+                try {
+                    controller.setUserProfile1(new JSONObject(value));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 if (rememberme.isChecked()) {
                     controller.setRememberId(emailId.getText().toString(), password.getText().toString());
                 } else {
                     controller.setRememberId("", "");
                 }
-//                Intent resultIntent = new Intent();
-//                setResult(Activity.RESULT_OK, resultIntent);
-//                finish();
                 startActivity(new Intent(Login.this, DashBoard.class));
             }
+        });
+    }
 
-            public void handleFault(BackendlessFault fault) {
-                // login failed, to get the error code call fault.getCode()
-                Toast.makeText(Login.this, fault.getMessage(), Toast.LENGTH_SHORT).show();
+    @Override
+    public void onError(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(Login.this, "Invalid user name or password", Toast.LENGTH_SHORT).show();
                 progressbar.setVisibility(View.GONE);
                 enableAll();
             }
-
-
         });
     }
-}
+
+    }
+

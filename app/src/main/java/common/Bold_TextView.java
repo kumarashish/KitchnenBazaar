@@ -8,7 +8,7 @@ import android.util.AttributeSet;
  * Created by Ashish.Kumar on 23-05-2018.
  */
 
-public class Bold_TextView extends android.support.v7.widget.AppCompatTextView {
+public class Bold_TextView extends androidx.appcompat.widget.AppCompatTextView {
 
     public Bold_TextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);

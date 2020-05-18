@@ -39,6 +39,18 @@
         android:id="@+id/singleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <EditText
+            android:textSize="14dp"
+            android:id="@+id/address_name"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/edittext_bg"
+            android:hint="Name "
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
 
       <EditText
           android:textSize="14dp"
@@ -48,9 +60,21 @@
           android:layout_margin="10dp"
           android:gravity="center"
           android:background="@drawable/edittext_bg"
-          android:hint="Flat no,Street name ,District,State"
+          android:hint="Flat no,Street name "
           android:layout_width="match_parent"
           android:layout_height="40dp" />
+        <EditText
+            android:visibility="gone"
+            android:textSize="14dp"
+            android:id="@+id/addressline2"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:hint="District,City,State"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
         <EditText
             android:textSize="14dp"
             android:singleLine="true"

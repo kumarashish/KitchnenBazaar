@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Naveen Sunkari\\StudioProjects\\Kitchen_Bazaar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.4.0.aar\\87ecbafa11c9dbdeee13cc03c4bd69c3\\res\\values-en-rSG\\values.xml",
+                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-wallet-11.4.0.aar\\30fb621dd4524fd1db6d7d3e0962e994\\res\\values-en-rSG\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

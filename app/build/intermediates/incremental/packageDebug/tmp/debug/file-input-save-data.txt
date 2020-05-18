@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Apr 15 13:13:45 IST 2020
+#Mon May 18 22:11:01 IST 2020
 2.base=C\:\\Users\\Naveen Sunkari\\StudioProjects\\Kitchen_Bazaar\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 0.path=classes2.dex
 2.baseType=DIRECTORY

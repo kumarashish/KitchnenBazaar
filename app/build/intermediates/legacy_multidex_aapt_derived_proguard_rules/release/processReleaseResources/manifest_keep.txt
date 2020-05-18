@@ -1,2 +1,0 @@
-# Referenced at C:\Users\Naveen Sunkari\StudioProjects\Kitchen_Bazaar\app\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:31
--keep class common.AppController { <init>(...); }

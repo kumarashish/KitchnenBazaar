@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -122,7 +122,7 @@ ArrayList<CurrentOrderModel> list=new ArrayList<>();
                 }
             }
         });
-        FrameLayout bottomSheet = (FrameLayout) mBottomSheetDialog.getWindow().findViewById(android.support.design.R.id.design_bottom_sheet);
+        FrameLayout bottomSheet = (FrameLayout) mBottomSheetDialog.getWindow().findViewById(com.google.android.material.R.id.design_bottom_sheet);
         bottomSheet.setBackgroundResource(R.drawable.alert_bg);
         mBottomSheetDialog.show();
     }

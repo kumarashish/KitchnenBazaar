@@ -15,7 +15,15 @@ public class Common {
     public static String mobile=storeName+"phoneNumber";
     public static String address=storeName+"Address";
     public static String userId=storeName+"ownerId";
+    public static String profilePic=storeName+"profile_pic";
     public static String sendSMSBaseUrl="http://roundsms.com/api/sendhttp.php?authkey=NDlmMWM4OWIyYmF";
+    public static String baseUrl="http://kitchenbazaar.online/api/";
+    public static String loginUrl=baseUrl+"user/login";
+    public static String forgetPasswordUrl=baseUrl+"/user/getPassword";
+    public static String registerUrl=baseUrl+"user/register";
+    public static String profilePicUrl=baseUrl+"Image/UploadImage";
+    public static String loginKeys[]={"mobilenumber", "password"};
+    public static String forgetPasswordKeys[]={"mobilenumber"};
     /*--------------------------------------------------------------*/
     public static String categoryTable="Category";
     public static String categoryColumn="CategoryType";
@@ -35,8 +43,14 @@ public class Common {
     public static String orderDetails="OrderItems";
     public static String orderId="orderId";
     public static String objectId="objectId";
-
     /*--------------------------------------------------------------*/
+    public static String deliveryAddressTable="DeliveryAddress";
+    public static String address1="adressLine1";
+    public static String address2="addressLine2";
+    public static String addressname="name";
+    public static String pinCode="pincode";
+    /*--------------------------------------------------------------*/
+
     public static int category=1;
     public static int trendingCategory=2;
     public static int pendingOrderStatus=1;

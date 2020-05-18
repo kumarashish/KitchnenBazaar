@@ -4,10 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/profile"
-            android:icon="@drawable/profile_icon"
-            android:title="Profile" />
+
 
         <item
             android:id="@+id/cart"
@@ -21,6 +18,18 @@
             android:id="@+id/history"
             android:icon="@drawable/order_h"
             android:title="Completed Orders" />
+        <item
+            android:id="@+id/delivery_address"
+            android:icon="@drawable/contact_us"
+            android:title="Delivery Address" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/changePassword"
+            android:icon="@drawable/pwd_icon"
+            android:title="Change Password" />
 
         <item
             android:id="@+id/contact_us"

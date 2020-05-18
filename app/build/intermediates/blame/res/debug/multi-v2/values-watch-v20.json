@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Naveen Sunkari\\StudioProjects\\Kitchen_Bazaar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-11.4.0.aar\\7aa101e9af5405acab1ba0913ba70536\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-auth-11.4.0.aar\\d1456a3dfb82bc07b8f3521c39878c1a\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\aeb01e589ba39e002d647cb3967c5f35\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\1c896d5a7976deb9df1965b233b338ac\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

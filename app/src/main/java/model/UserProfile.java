@@ -15,6 +15,7 @@ public class UserProfile {
        String phoneNumber;
         String Address;
         String userId;
+        String profilePic;
 
     public UserProfile(SharedPreferences prfs) {
         this.Name = prfs.getString(Common.name, "");
@@ -22,6 +23,7 @@ public class UserProfile {
         this.phoneNumber = prfs.getString(Common.mobile, "");
         this.Address = prfs.getString(Common.address, "");
         this.userId = prfs.getString(Common.userId, "");
+        this.profilePic=prfs.getString(Common.profilePic,"");
     }
     public void setAddress(String address) {
         Address = address;

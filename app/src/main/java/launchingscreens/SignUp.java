@@ -1,9 +1,8 @@
 package launchingscreens;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,16 +10,16 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.backendless.Backendless;
-import com.backendless.BackendlessUser;
-import com.backendless.async.callback.AsyncCallback;
-import com.backendless.exceptions.BackendlessFault;
 import com.kitchenbazaar.R;
+
+import org.json.JSONObject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import common.AppController;
 
+import common.Common;
+import interfaces.WebApiResponseCallback;
 import util.Utils;
 import util.Validation;
 
@@ -28,7 +27,7 @@ import util.Validation;
  * Created by ashish.kumar on 04-07-2018.
  */
 
-public class SignUp  extends Activity implements View.OnClickListener{
+public class SignUp  extends Activity implements View.OnClickListener, WebApiResponseCallback {
     @BindView(R.id.back)
     ImageView back;
     @BindView(R.id.Name)
@@ -108,35 +107,50 @@ public class SignUp  extends Activity implements View.OnClickListener{
         disableAll();
         progressbar.setVisibility(View.VISIBLE);
         progressbar.bringToFront();
-        BackendlessUser user = new BackendlessUser();
-        user.setEmail(emailId.getText().toString());
-        user.setPassword(password.getText().toString());
-        user.setProperty("name", Name.getText().toString());
-        user.setProperty("phoneNumber", mobile.getText().toString());
-        user.setProperty("Address", address.getText().toString());
+        controller.getWebApiCall().postDataWithJSON(Common.registerUrl,getJSON().toString(),this);
 
 
-        Backendless.UserService.register(user, new AsyncCallback<BackendlessUser>() {
-            @Override
-            public void handleResponse(BackendlessUser response) {
-                progressbar.setVisibility(View.GONE);
-                Toast.makeText(SignUp.this, "Registered Successfully.", Toast.LENGTH_LONG).show();
-                controller.setUserLoggedIn(true);
-                controller.setUserProfile(response);
-                Intent resultIntent = new Intent();
-                setResult(Activity.RESULT_OK, resultIntent);
-                finish();
+//        BackendlessUser user = new BackendlessUser();
+//        user.setEmail(emailId.getText().toString());
+//        user.setPassword(password.getText().toString());
+//        user.setProperty("name", Name.getText().toString());
+//        user.setProperty("phoneNumber", mobile.getText().toString());
+//        user.setProperty("Address", address.getText().toString());
+//
+//
+//        Backendless.UserService.register(user, new AsyncCallback<BackendlessUser>() {
+//            @Override
+//            public void handleResponse(BackendlessUser response) {
+//
+//
+//            }
+//
+//            @Override
+//            public void handleFault(BackendlessFault fault) {
+//                progressbar.setVisibility(View.GONE);
+//                Toast.makeText(SignUp.this, fault.getMessage(), Toast.LENGTH_LONG).show();
+//                enableAll();
+//            }
+//        });
 
-            }
+    }
 
-            @Override
-            public void handleFault(BackendlessFault fault) {
-                progressbar.setVisibility(View.GONE);
-                Toast.makeText(SignUp.this, fault.getMessage(), Toast.LENGTH_LONG).show();
-                enableAll();
-            }
-        });
-
+    public JSONObject getJSON() {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("password", password.getText().toString());
+            jsonObject.put("confirmPassword", password.getText().toString());
+            jsonObject.put("email", emailId.getText().toString());
+            jsonObject.put("FirstName", Name.getText().toString());
+            jsonObject.put("LastName", "");
+            jsonObject.put("Address", address.getText().toString());
+            jsonObject.put("userStatus", true);
+            jsonObject.put("isAdmin", false);
+            jsonObject.put("mobileNumber", mobile.getText().toString());
+        } catch (Exception ex) {
+            ex.fillInStackTrace();
+        }
+        return jsonObject;
     }
 
     public boolean isAllFieldsValidated() {
@@ -154,5 +168,34 @@ public class SignUp  extends Activity implements View.OnClickListener{
             }
         }
         return status;
+    }
+
+    @Override
+    public void onSucess(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+
+                progressbar.setVisibility(View.GONE);
+                Toast.makeText(SignUp.this, "Registered Successfully."+value, Toast.LENGTH_LONG).show();
+                controller.setUserLoggedIn(true);
+//                //controller.setUserProfile(response);
+//                Intent resultIntent = new Intent();
+//                setResult(Activity.RESULT_OK, resultIntent);
+                finish();
+            }
+            });
+    }
+
+    @Override
+    public void onError(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                progressbar.setVisibility(View.GONE);
+                Toast.makeText(SignUp.this, value, Toast.LENGTH_LONG).show();
+                enableAll();
+            }
+});
     }
 }

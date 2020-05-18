@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Naveen Sunkari\\StudioProjects\\Kitchen_Bazaar\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\aeb01e589ba39e002d647cb3967c5f35\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\1c896d5a7976deb9df1965b233b338ac\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\bd415926ea329c77cbd456332bcaf525\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Naveen Sunkari\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.2.0.aar\\9effb639e6e78a3f01238e4b098ec139\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

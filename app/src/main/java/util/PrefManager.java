@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 import com.backendless.BackendlessUser;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import common.Common;
@@ -75,6 +76,22 @@ public class PrefManager {
         editor.putString(Common.mobile, profile.getProperty("phoneNumber").toString());
         editor.putString(Common.address, profile.getProperty("Address").toString());
         editor.putString(Common.userId, profile.getProperty("ownerId").toString());
+        editor.commit();
+    }
+
+    public void setUserProfile(JSONObject profile) {
+
+        try {
+            editor.putString(Common.name, profile.getString("FirstName"));
+            editor.putString(Common.email, profile.getString("email").toString());
+            editor.putString(Common.mobile, profile.getString("mobileNumber").toString());
+            editor.putString(Common.address, profile.getString("Address").toString());
+            editor.putString(Common.userId, profile.getString("Id").toString());
+            editor.putString(Common.profilePic, profile.getString("ProfileImage").toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
         editor.commit();
     }
 
