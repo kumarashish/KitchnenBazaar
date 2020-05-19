@@ -209,7 +209,6 @@ public void checkData()
                 break;
             case R.id.signUp_btn:
                 startActivityForResult(new Intent(DashBoard.this, SignUp.class),2);
-
                 break;
             case R.id.edit_location:
                 startActivityForResult(new Intent(DashBoard.this,LocationSearch.class),3);

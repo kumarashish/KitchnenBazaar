@@ -182,8 +182,9 @@ public class SignUp  extends Activity implements View.OnClickListener, WebApiRes
                 sendSMS();
                 progressbar.setVisibility(View.GONE);
                 Utils.getStatus(value,SignUp.this);
-                Intent resultIntent = new Intent();
-                setResult(Activity.RESULT_OK, resultIntent);
+                Intent resultIntent = new Intent(SignUp.this,Login.class);
+               // setResult(Activity.RESULT_OK, resultIntent);
+                startActivity(resultIntent);
                 finish();
             }
             });
