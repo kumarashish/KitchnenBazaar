@@ -11,6 +11,8 @@ import java.util.Map;
 public class CurrentOrderModel {
     java.util.Date date;
     String amount;
+    String deliveryDate;
+    String deliverySlot;
     Integer totalItemCount;
     String orderId;
     String address;
@@ -40,6 +42,28 @@ public class CurrentOrderModel {
         {
             ex.fillInStackTrace();
         }
+        try{
+          deliveryDate=(String) map.get("deliverydate");
+        }catch (Exception ex)
+        {
+            ex.fillInStackTrace();
+        }
+        try{
+            deliverySlot=(String) map.get("deliveryslot");
+        }catch (Exception ex)
+        {
+            ex.fillInStackTrace();
+        }
+
+
+    }
+
+    public String getDeliveryDate() {
+        return deliveryDate==null?"":deliveryDate;
+    }
+
+    public String getDeliverySlot() {
+        return deliverySlot==null?"":deliverySlot;
     }
 
     public String getCustomermessage() {

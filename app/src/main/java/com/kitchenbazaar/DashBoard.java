@@ -114,6 +114,8 @@ int i=0;
             user_loggedin.setVisibility(View.VISIBLE);
             user_notloggedin.setVisibility(View.GONE);
             userName.setText(controller.getUserProfil().getName());
+            Picasso.with(DashBoard.this).load(controller.getUserProfil().getProfilePic()).placeholder(R.drawable.default_icon).into(profilePic);
+
         } else {
             user_notloggedin.setVisibility(View.VISIBLE);
             user_loggedin.setVisibility(View.GONE);
@@ -301,7 +303,7 @@ public void updateheader()
         {
             checkData();
         } else if ((requestCode == 5)) {
-            Picasso.with(DashBoard.this).load(controller.getUserProfil().getProfilePic()).into(profilePic);
+            Picasso.with(DashBoard.this).load(controller.getUserProfil().getProfilePic()).placeholder(R.drawable.default_icon).into(profilePic);
         }
 
     }

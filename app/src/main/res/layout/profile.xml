@@ -194,16 +194,19 @@ android:src="@drawable/default_icon"
                         android:src="@drawable/edit_btn" />
                 </RelativeLayout>
                 <View
+                    android:visibility="gone"
                     android:background="@color/grey"
                     android:layout_margin="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp" />
                 <RelativeLayout
+                    android:visibility="gone"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
+
 
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
@@ -261,6 +264,12 @@ android:src="@drawable/default_icon"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />

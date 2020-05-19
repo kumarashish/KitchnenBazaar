@@ -4,6 +4,7 @@ package com.kitchenbazaar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
@@ -33,6 +34,7 @@ public class MyProfile_ViewBinding implements Unbinder {
     target.name = Utils.findRequiredViewAsType(source, R.id.name, "field 'name'", TextView.class);
     target.appVersion = Utils.findRequiredViewAsType(source, R.id.appversion, "field 'appVersion'", TextView.class);
     target.profilePic = Utils.findRequiredViewAsType(source, R.id.profilePic, "field 'profilePic'", CircleImageView.class);
+    target.progressBar = Utils.findRequiredViewAsType(source, R.id.progressbar, "field 'progressBar'", ProgressBar.class);
   }
 
   @Override
@@ -50,5 +52,6 @@ public class MyProfile_ViewBinding implements Unbinder {
     target.name = null;
     target.appVersion = null;
     target.profilePic = null;
+    target.progressBar = null;
   }
 }

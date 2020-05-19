@@ -1,14 +1,26 @@
 package com.kitchenbazaar;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
+
+import com.backendless.IDataStore;
+import com.backendless.persistence.DataQueryBuilder;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -22,16 +34,23 @@ import com.backendless.Backendless;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import adapter.AddressAdapter;
+import adapter.AlertAddressAdapter;
 import adapter.MyCartAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import common.AppController;
 import common.Common;
 import launchingscreens.Login;
+import model.DeliveryAddressModel;
 import model.OrderModel;
 import model.ProductModel;
 import model.UserProfile;
@@ -65,6 +84,10 @@ public class MyCart extends Activity implements View.OnClickListener{
     String customer_pincode;
     String customerName;
     String customerMobileNumber;
+    ProgressDialog progressDialog;
+    ArrayList<DeliveryAddressModel>addressListItems=new ArrayList<>();
+    DeliveryAddressModel model;
+    String selectedSlot="";
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mycart);
@@ -87,6 +110,9 @@ public class MyCart extends Activity implements View.OnClickListener{
         cancelOrder.setOnClickListener(this);
         placeOrder.setOnClickListener(this);
         totalCost.setText("Rs "+Integer.toString(getTotalCost()));
+        inilizeProgressDialog();
+        progressDialog.show();
+        getAddressList();
 
 
 }
@@ -102,10 +128,14 @@ public class MyCart extends Activity implements View.OnClickListener{
                 break;
             case R.id.placeOrder:
                 if (controller.isUserLoggedIn()) {
-                    showAddressPopup();
+                    if(addressListItems.size()>0) {
+                        showAddressPopup();
+                    }else {
+                        startActivityForResult(new Intent(MyCart.this,DeliveryAddress.class),2);
+                    }
 
                 }else{
-                    startActivityForResult(new Intent(MyCart.this, Login.class),1);
+                    startActivityForResult(new Intent(MyCart.this, Login.class),34);
                 }
                 break;
         }
@@ -116,9 +146,13 @@ public class MyCart extends Activity implements View.OnClickListener{
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode==RESULT_OK)
-        {
-            showAddressPopup();
+        if((requestCode==34)&&(resultCode==RESULT_OK))
+        {   progressDialog.show();
+            getAddressList();
+        }else {
+            if (resultCode == RESULT_OK) {
+                showAddressPopup();
+            }
         }
     }
 
@@ -207,7 +241,7 @@ public class MyCart extends Activity implements View.OnClickListener{
 
    }
 
-    public void placeOrder(String address,String pincode) {
+    public void placeOrder(String address,String pincode,String deliveryDate,String slot) {
         customer_address=address;
         customer_pincode=pincode;
         UserProfile profile = controller.getUserProfil();
@@ -225,6 +259,8 @@ public class MyCart extends Activity implements View.OnClickListener{
         map.put("totalamount", Integer.toString(getTotalCost()));
         map.put("userId", profile.getUserId());
         map.put("TotalItemsCount",controller.getMyCartItemCount());
+        map.put("deliverydate", deliveryDate);
+        map.put("deliveryslot",slot);
         final Map mapp = map;
         Thread t = new Thread(new Runnable() {
             @Override
@@ -284,52 +320,140 @@ public class MyCart extends Activity implements View.OnClickListener{
         mBottomSheetDialog.show();
     }
 
-    public void showAddressPopup() {
+    public void showAddressPopup()
+    {
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.address_alert);
+        final Window window = dialog.getWindow();
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+
+        ListView address = (ListView) dialog.findViewById(R.id.addressList);
+        final Button close=(Button) dialog.findViewById(R.id.close) ;
+        address.setAdapter(new AlertAddressAdapter(MyCart.this,addressListItems));
+        address.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                model = addressListItems.get(position);
+                if (isDeliveryAvailable(Integer.parseInt(model.getPinCode()))) {
+                    dialog.cancel();
+                    showAlert();
+                }else{
+                    Toast.makeText(MyCart.this, "Sorry we are not delivering to entered pincode.Please select different address", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             dialog.cancel();
+
+            }
+        });
+        dialog.show();
+    }
+
+    public void showAlert() {
+
         final BottomSheetDialog mBottomSheetDialog = new BottomSheetDialog(MyCart.this);
-        View sheetView = getLayoutInflater().inflate(R.layout.payment_popup, null);
+        View sheetView = getLayoutInflater().inflate(R.layout.checkout_popup, null);
         mBottomSheetDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
         mBottomSheetDialog.setContentView(sheetView);
         mBottomSheetDialog.setCancelable(false);
-        final EditText address = (EditText) sheetView.findViewById(R.id.address);
-        final EditText pincode = (EditText) sheetView.findViewById(R.id.pincode);
-        Button submit = (Button) sheetView.findViewById(R.id.submit);
-        submit.setTypeface(controller.getNormal());
-        pincode.setTypeface(controller.getNormal());
-        address.setTypeface(controller.getNormal());
-        Button close = (Button) sheetView.findViewById(R.id.close);
+
+        TextView name=(TextView)sheetView.findViewById(R.id.address_name) ;
+        TextView address=(TextView)sheetView.findViewById(R.id.address) ;
+        TextView address2=(TextView)sheetView.findViewById(R.id.addressline2) ;
+        final Button close=(Button) sheetView.findViewById(R.id.close) ;
+        final Button date=(Button) sheetView.findViewById(R.id.date) ;
+        final Button submit=(Button) sheetView.findViewById(R.id.submit) ;
+        final Button slot1=(Button) sheetView.findViewById(R.id.slot1) ;
+        final Button slot2=(Button)sheetView.findViewById(R.id.slot2) ;
+        final Button slot3=(Button)sheetView.findViewById(R.id.slot3) ;
+        final Button slot4=(Button)sheetView.findViewById(R.id.slot4) ;
+         name.setText(model.getName());
+         address.setText(model.getAddressLine1());
+         address2.setText(model.getAddressLine2()+", "+model.getPinCode());
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        String str = sdf.format(new Date());
+
         close.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
               mBottomSheetDialog.cancel();
+
             }
         });
+         date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDatePicker(date);
+
+            }
+        });
+        slot1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                slot1.setBackgroundResource(R.color.grey);
+                slot2.setBackground(getDrawable(R.drawable.rect));
+                slot3.setBackground(getDrawable(R.drawable.rect));
+                slot4.setBackground(getDrawable(R.drawable.rect));
+                selectedSlot=slot1.getText().toString();
+            }
+        });
+        slot2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                slot1.setBackground(getDrawable(R.drawable.rect));
+                slot2.setBackgroundResource(R.color.grey);
+                slot3.setBackground(getDrawable(R.drawable.rect));
+                slot4.setBackground(getDrawable(R.drawable.rect));
+                selectedSlot=slot2.getText().toString();
+            }
+        });slot3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                slot1.setBackground(getDrawable(R.drawable.rect));
+                slot2.setBackground(getDrawable(R.drawable.rect));
+                slot3.setBackgroundResource(R.color.grey);
+                slot4.setBackground(getDrawable(R.drawable.rect));
+                selectedSlot=slot3.getText().toString();
+            }
+        });
+        slot4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                slot1.setBackground(getDrawable(R.drawable.rect));
+                slot2.setBackground(getDrawable(R.drawable.rect));
+                slot3.setBackground(getDrawable(R.drawable.rect));
+                slot4.setBackgroundResource(R.color.grey);
+                selectedSlot=slot4.getText().toString();
+            }
+        });
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (address.getText().length() > 10) {
-                    if (pincode.getText().length() == 6) {
-                        if (isDeliveryAvailable(Integer.parseInt(pincode.getText().toString()))) {
-                            progressBar.setVisibility(View.VISIBLE);
-                            placeOrder(address.getText().toString(), pincode.getText().toString());
-                            mBottomSheetDialog.cancel();
-                        } else {
-                            Toast.makeText(MyCart.this, "Sorry we are not delivering to entered pincode.", Toast.LENGTH_SHORT).show();
-                        }
-                    } else {
-                        if (pincode.getText().length() == 0) {
-                            Toast.makeText(MyCart.this, "Please enter Pincode", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(MyCart.this, "Please enter valid Pincode", Toast.LENGTH_SHORT).show();
-                        }
+                if((model!=null)&&(date.getText().length()>0)&&(selectedSlot.length()>0)){
+                    progressBar.setVisibility(View.VISIBLE);
+                    placeOrder(model.getAddressLine1()+" "+model.getAddressLine2(),model.getPinCode(),date.getText().toString(),selectedSlot);
+                    mBottomSheetDialog.cancel();
+
+                }else{
+                    if(model==null)
+                    {
+                        Toast.makeText(MyCart.this,"Please select address",Toast.LENGTH_SHORT).show();
+                    } else if(date.getText().length()==0)
+                    {
+                        Toast.makeText(MyCart.this,"Please select delivery date",Toast.LENGTH_SHORT).show();
                     }
-                } else {
-                    if (address.getText().length() == 0) {
-                        Toast.makeText(MyCart.this, "Please enter address", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(MyCart.this, "Please enter valid address", Toast.LENGTH_SHORT).show();
+                    else if(selectedSlot.length()==0)
+                    {
+                        Toast.makeText(MyCart.this,"Please select slot",Toast.LENGTH_SHORT).show();
                     }
                 }
-            }
+                }
+
         });
         FrameLayout bottomSheet = (FrameLayout) mBottomSheetDialog.getWindow().findViewById(com.google.android.material.R.id.design_bottom_sheet);
         bottomSheet.setBackgroundResource(R.drawable.alert_bg);
@@ -347,4 +471,72 @@ public class MyCart extends Activity implements View.OnClickListener{
         return status;
     }
 
-}
+
+    public void getAddressList() {
+
+        Thread T = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String query =  ""+Common.userIdKey+" = '"+controller.getUserProfil().getUserId()+"'";
+                IDataStore<Map> contactStorage = Backendless.Data.of(Common.deliveryAddressTable);
+                DataQueryBuilder queryBuilder = DataQueryBuilder.create();
+                queryBuilder.setWhereClause(query);
+                queryBuilder.setPageSize(100);
+                contactStorage.find( queryBuilder, new AsyncCallback<List<Map>>()
+                {
+                    @Override
+                    public void handleResponse(final List<Map>addressList )
+                    { addressListItems.clear();
+                        if(addressList.size()>0) {
+                            for (int i = 0; i < addressList.size(); i++) {
+                                Map address = addressList.get(i);
+                                addressListItems.add(new DeliveryAddressModel(address));
+                            }
+
+
+                        }
+
+                        Log.i( "MYAPP", "Retrieved " +addressList.size() + " objects" );
+                        progressDialog.cancel();
+
+                    }
+
+                    @Override
+                    public void handleFault( BackendlessFault fault )
+                    {
+                        Log.e( "MYAPP", "Server reported an error " + fault );
+                        progressDialog.cancel();
+                    }
+                } );
+            }
+        });
+        T.start();
+    }
+    public void inilizeProgressDialog()
+    {
+        progressDialog = new ProgressDialog(this);
+        progressDialog .setProgressStyle(ProgressDialog.STYLE_SPINNER);
+    }
+
+    public void showDatePicker(final Button btn)
+    {
+        final Calendar cldr = Calendar.getInstance();
+        int day = cldr.get(Calendar.DAY_OF_MONTH);
+        int month = cldr.get(Calendar.MONTH);
+        int year = cldr.get(Calendar.YEAR);
+        // date picker dialog
+        final DatePickerDialog picker = new DatePickerDialog(MyCart.this,
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                        btn.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+
+                    }
+                }, year, month, day);
+        picker.getDatePicker().setMinDate(System.currentTimeMillis()+86400000);
+        picker.show();
+    }
+    }
+
+
+

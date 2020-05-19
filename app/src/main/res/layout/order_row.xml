@@ -55,6 +55,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <common.Bold_TextView
+                android:layout_margin="1dp"
+                android:text="Delivery date"
+                android:textSize="14dp"
+                android:id="@+id/deliveryDate"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <common.Bold_TextView
                 android:textColor="@color/purple"
                 android:layout_margin="1dp"
                 android:text="Payment : "

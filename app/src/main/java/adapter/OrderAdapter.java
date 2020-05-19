@@ -69,6 +69,7 @@ public class OrderAdapter extends BaseAdapter {
             holder.details = (View) view.findViewById(R.id.details);
             holder.ownerMessage=(TextView)view.findViewById(R.id.ownerMessage);
             holder.paymentstatus=(TextView)view.findViewById(R.id.paymentstatus);
+            holder.deliveryDate=(TextView)view.findViewById(R.id.deliveryDate);
 
         } else {
             holder = (ViewHolder) view.getTag();
@@ -127,11 +128,12 @@ public class OrderAdapter extends BaseAdapter {
         holder.totalitemcount.setText("Total Item Count : "+model.getTotalItemCount());
         holder.address.setText("Delivery Address : "+model.getAddress());
         holder.orderstatus.setText("Status : "+ Utils.getOrderStatusString(model.getOrderstatus()));
+        holder.deliveryDate.setText("Slot : "+model.getDeliveryDate() +"  "+model.getDeliverySlot());
         view.setTag(holder);
         return view;
     }
     public class ViewHolder {
-       TextView date,amount,totalitemcount,orderstatus,address,ownerMessage,paymentstatus;
+       TextView date,amount,totalitemcount,orderstatus,address,ownerMessage,paymentstatus,deliveryDate;
        Button cancelOrder;
        View details;
     }

@@ -14,10 +14,12 @@ import android.util.Base64;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -58,6 +60,8 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
     TextView appVersion;
     @BindView(R.id.profilePic)
     CircleImageView profilePic;
+    @BindView(R.id.progressbar)
+    ProgressBar progressBar;
     String userId;
     boolean isProfilePicChanged=false;
     @Override
@@ -79,6 +83,7 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
        name.setText(profile.getName());
        location.setText(controller.getAddress());
        appVersion.setText("App Version : "+Utils.getAppVersion(MyProfile.this));
+       Picasso.with(MyProfile.this).load(controller.getUserProfil().getProfilePic()).placeholder(R.drawable.default_icon).into(profilePic);
    }
     @Override
     public void onClick(View view) {
@@ -144,7 +149,7 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
 //        return temp;
 //    }
     public void uploadProfilePic(Uri uri)
-    {
+    {progressBar.setVisibility(View.VISIBLE);
         String encodedImage = getBase64(uri);
        controller.getWebApiCall().postDataWithJSON(Common.profilePicUrl,getJSONObject(encodedImage).toString(),MyProfile.this);
 
@@ -171,6 +176,7 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
             @Override
             public void run() {
                 if(Utils.getStatus(value,MyProfile.this)) {
+                    progressBar.setVisibility(View.GONE);
                     isProfilePicChanged = true;
                     controller.setProfilePic(Utils.getValue(value,"imagePath"));
                 }
@@ -183,6 +189,7 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                progressBar.setVisibility(View.GONE);
                 Toast.makeText(MyProfile.this,value,Toast.LENGTH_SHORT).show();
             }
         });
