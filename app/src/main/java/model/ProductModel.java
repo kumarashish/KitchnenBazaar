@@ -2,6 +2,8 @@ package model;
 
 import java.util.Map;
 
+import common.Common;
+
 /**
  * Created by ashish.kumar on 09-07-2018.
  */
@@ -20,7 +22,7 @@ public class ProductModel {
         CategoryName = "";
         Category_Id= (String)map.get("Category_Id");
         ProductName= (String) map.get("ProductName");
-        Product_Image= "http://www.bsmc.net.au/wp-content/uploads/No-image-available.jpg";
+        Product_Image=  (String) map.get("ImageSrc");
         OfferPrice= (String )map.get("SellingPrice");
         MRP= (String) map.get("MRP");
         productId= (String)map.get("ProductId");
@@ -55,7 +57,7 @@ public void setQuantity(int quantity)
     }
 
     public String getProduct_Image() {
-        return Product_Image;
+        return Product_Image==null? Common.noImage :Product_Image;
     }
 
     public void increaseQuantity()
@@ -71,4 +73,5 @@ public void setQuantity(int quantity)
     public int getQuantity() {
         return quantity;
     }
+
 }

@@ -37,7 +37,7 @@ public CategoryModel(Map map){
     }
 
     public String getCategoryImage() {
-        return categoryImage;
+        return categoryImage==null?Common.noImage:categoryImage;
     }
 
     public String getCategoryId() {

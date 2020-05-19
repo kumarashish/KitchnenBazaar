@@ -17,6 +17,7 @@ public class Common {
     public static String userId=storeName+"ownerId";
     public static String profilePic=storeName+"profile_pic";
     public static String sendSMSBaseUrl="http://roundsms.com/api/sendhttp.php?authkey=NDlmMWM4OWIyYmF";
+    public static String noImage="http://www.bsmc.net.au/wp-content/uploads/No-image-available.jpg";
     public static String baseUrl="http://kitchenbazaar.online/api/";
     public static String loginUrl=baseUrl+"user/login";
     public static String forgetPasswordUrl=baseUrl+"/user/getPassword";

@@ -14,12 +14,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.kitchenbazaar.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
 import common.AppController;
 
+import common.Common;
 import interfaces.OnQuantityClick;
 import model.ProductModel;
 import util.Utils;
@@ -94,7 +96,9 @@ public class ProductListAdapter extends BaseAdapter{
             holder.mrp.setText(spannable);
             holder.offerPrice.setText("Rs "+model.getOfferPrice());
         }
-
+        if(model.getProduct_Image().length()>0) {
+            Picasso.with(activity).load(model.getProduct_Image()).placeholder(R.drawable.no_image).into(holder.productImage);
+        }
         holder.quantityValue.setText(Integer.toString(model.getQuantity()));
         String discount= Utils.getDiscount(Double.parseDouble(model.getMRP()),Double.parseDouble(model.getOfferPrice()));
         if (discount.length() > 0) {

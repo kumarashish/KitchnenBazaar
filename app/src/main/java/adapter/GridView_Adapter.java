@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.kitchenbazaar.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -67,19 +68,9 @@ callback=(OnCategorySelected)c;
         final ProgressBar bar = holder.progressBar;
         final ImageView image = holder.image;
         bar.setVisibility(View.GONE);
-//      //  Picasso.with(mContext).load(model.getCategoryImage()).placeholder(R.drawable.no_image).resize(110, 100).into(holder.image, new Callback() {
-//            @Override
-//            public void onSuccess() {
-//                bar.setVisibility(View.GONE);
-//            }
-//
-//
-//            public void onError() {
-//
-//                    bar.setVisibility(View.GONE);
-//
-//            }
-//        });
+        if (model.getCategoryImage().length() > 0) {
+            Picasso.with(mContext).load(model.getCategoryImage()).placeholder(R.drawable.no_image).into(holder.image);
+        }
         holder.name.setText(model.getCategoryName());
         image.setOnClickListener(new View.OnClickListener() {
             @Override
