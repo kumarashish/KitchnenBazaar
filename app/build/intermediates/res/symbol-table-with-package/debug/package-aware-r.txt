@@ -1648,6 +1648,7 @@ drawable ic_vol_type_tv_dark
 drawable ic_vol_type_tv_light
 drawable img1
 drawable increase
+drawable loading
 drawable logo
 drawable logout
 drawable mobile

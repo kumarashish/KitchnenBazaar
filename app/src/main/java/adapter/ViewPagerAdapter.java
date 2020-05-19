@@ -9,6 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.kitchenbazaar.R;
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+
+import model.BannerModel;
 
 
 /**
@@ -19,15 +24,16 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private Integer[] images = {R.drawable.offer1, R.drawable.offer2, R.drawable.offer3};
+    private ArrayList<BannerModel>bannerlist;
 
-    public ViewPagerAdapter(Context context) {
+    public ViewPagerAdapter(Context context,ArrayList<BannerModel>bannerlist) {
         this.context = context;
+        this.bannerlist=bannerlist;
     }
 
     @Override
     public int getCount() {
-        return images.length;
+        return bannerlist.size();
     }
 
     @Override
@@ -41,9 +47,7 @@ public class ViewPagerAdapter extends PagerAdapter {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.custom_layout, null);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
-        imageView.setImageResource(images[position]);
-
-
+        Picasso.with(context).load(bannerlist.get(position).getImgStr()).placeholder(R.drawable.loading).into(imageView);
         ViewPager vp = (ViewPager) container;
         vp.addView(view, 0);
         return view;

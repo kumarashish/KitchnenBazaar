@@ -1,6 +1,7 @@
 package com.kitchenbazaar;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -35,6 +36,9 @@ import com.backendless.exceptions.BackendlessFault;
 import com.backendless.persistence.DataQueryBuilder;
 import com.squareup.picasso.Picasso;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -46,16 +50,19 @@ import adapter.ViewPagerAdapter;
 import common.AppController;
 import common.Common;
 import interfaces.OnCategorySelected;
+import interfaces.WebApiResponseCallback;
 import launchingscreens.Login;
 import launchingscreens.SignUp;
+import model.BannerModel;
 import model.CategoryModel;
 import util.Utils;
 
 public class DashBoard extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener, OnCategorySelected {
+        implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener, OnCategorySelected, WebApiResponseCallback {
 AppController controller;
 int i=0;
     ViewPager viewPager;
+    TabLayout tabLayout;
     GridView todays_deal,trendingCategory,category;
     RelativeLayout user_loggedin;
     LinearLayout user_notloggedin;
@@ -68,6 +75,7 @@ int i=0;
      ImageView editLocation;
     ProgressBar progress;
     ImageView profilePic;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,16 +93,14 @@ int i=0;
         View contentDahboard = (View) dashBoard.findViewById(R.id.contentDashboard);
         progress=(ProgressBar) contentDahboard.findViewById(R.id.progress);
          viewPager = (ViewPager) contentDahboard.findViewById(R.id.ViewPager);
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
-        viewPager.setAdapter(viewPagerAdapter);
-        TabLayout tabLayout = (TabLayout) contentDahboard.findViewById(R.id.indicator);
+         tabLayout = (TabLayout) contentDahboard.findViewById(R.id.indicator);
         todays_deal=(GridView) contentDahboard.findViewById(R.id.todays_deal);
         trendingCategory=(GridView) contentDahboard.findViewById(R.id.trending_category);
         category=(GridView) contentDahboard.findViewById(R.id.category);
 //        category.setAdapter(new GridView_Adapter(DashBoard.this,6));
 //        trendingCategory.setAdapter(new GridView_Adapter(DashBoard.this,5));
 //        todays_deal.setAdapter(new GridView_Adapter(DashBoard.this,6));
-        tabLayout.setupWithViewPager(viewPager, true);
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -125,10 +131,7 @@ int i=0;
         signUp_btn.setOnClickListener(this);
         login_btn.setOnClickListener(this);
         navigationView.setNavigationItemSelectedListener(this);
-        MyTimerTask yourTask = new MyTimerTask();
-        Timer t = new Timer();
-
-        t.scheduleAtFixedRate(yourTask, 0, 10000);  // 10 sec interval
+        // 10 sec interval
 
         if (controller.isUserLoggedIn()) {
             navigationView.inflateMenu(R.menu.activity_dash_board_drawer);
@@ -137,6 +140,11 @@ int i=0;
         }
         editLocation.setOnClickListener(this);
         checkData();
+        inilizeProgressDialog();
+        if (Utils.isNetworkAvailable(DashBoard.this)) {
+            progressDialog.show();
+            controller.getWebApiCall().getData(Common.getBanner, this);
+        }
     }
 
 public void checkData()
@@ -149,7 +157,14 @@ public void checkData()
         showLocationAlert();
     }
 }
+public void startTimer()
+{
+    MyTimerTask yourTask = new MyTimerTask();
+    Timer t = new Timer();
 
+    t.scheduleAtFixedRate(yourTask, 0, 10000);  // 10 sec interval
+
+}
 
     @Override
     public void onBackPressed() {
@@ -258,6 +273,47 @@ public void checkData()
         });
         dialog.show();
     }
+
+    @Override
+    public void onSucess(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    ArrayList<BannerModel>bannerList=new ArrayList<>();
+                    JSONArray jsonArray= new JSONArray(value);
+                    for(int i=0;i<jsonArray.length();i++)
+                    {
+                        bannerList.add(new BannerModel(jsonArray.getJSONObject(i)));
+                    }
+                    if(bannerList.size()>0)
+                    {
+                        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(DashBoard.this,bannerList);
+                        viewPager.setAdapter(viewPagerAdapter);
+                        tabLayout.setupWithViewPager(viewPager, true);
+                        startTimer();
+                    }
+                    progressDialog.cancel();
+                }catch (Exception ex)
+                {
+                    ex.fillInStackTrace();
+                }
+                progressDialog.cancel();
+            }
+        });
+    }
+
+    @Override
+    public void onError(final String value) {
+runOnUiThread(new Runnable() {
+    @Override
+    public void run() {
+        Toast.makeText(DashBoard.this,value,Toast.LENGTH_SHORT).show();
+        progressDialog.cancel();
+    }
+});
+    }
+
     class MyTimerTask extends TimerTask {
         public void run() {
             // do whatever you want in hereif(i==3)
@@ -424,6 +480,11 @@ public void updateheader()
         mBottomSheetDialog.show();
     }
 
+    public void inilizeProgressDialog()
+    {
+        progressDialog = new ProgressDialog(this);
+        progressDialog .setProgressStyle(ProgressDialog.STYLE_SPINNER);
+    }
 
 
 }
