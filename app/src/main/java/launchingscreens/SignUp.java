@@ -1,6 +1,7 @@
 package launchingscreens;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.kitchenbazaar.MyCart;
 import com.kitchenbazaar.R;
 
 import org.json.JSONObject;
@@ -20,6 +22,7 @@ import common.AppController;
 
 import common.Common;
 import interfaces.WebApiResponseCallback;
+import network.WebApiCall;
 import util.Utils;
 import util.Validation;
 
@@ -176,12 +179,11 @@ public class SignUp  extends Activity implements View.OnClickListener, WebApiRes
             @Override
             public void run() {
 
+                sendSMS();
                 progressbar.setVisibility(View.GONE);
-                Toast.makeText(SignUp.this, "Registered Successfully."+value, Toast.LENGTH_LONG).show();
-                controller.setUserLoggedIn(true);
-//                //controller.setUserProfile(response);
-//                Intent resultIntent = new Intent();
-//                setResult(Activity.RESULT_OK, resultIntent);
+                Utils.getStatus(value,SignUp.this);
+                Intent resultIntent = new Intent();
+                setResult(Activity.RESULT_OK, resultIntent);
                 finish();
             }
             });
@@ -193,9 +195,21 @@ public class SignUp  extends Activity implements View.OnClickListener, WebApiRes
             @Override
             public void run() {
                 progressbar.setVisibility(View.GONE);
-                Toast.makeText(SignUp.this, value, Toast.LENGTH_LONG).show();
+                Toast.makeText(SignUp.this,"Email Id or Mobile number already registered",Toast.LENGTH_SHORT).show();
                 enableAll();
             }
 });
+    }
+
+    public void sendSMS() {
+
+        Thread T2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                new WebApiCall(SignUp.this).getData(Common.getSendSMSUrl(mobile.getText().toString(), "You have registered sucessfully with kitchen bazaar.Your login details Mobile number:" + mobile.getText().toString() + ", Password " + password.getText().toString()));
+
+            }
+        });
+        T2.start();
     }
 }

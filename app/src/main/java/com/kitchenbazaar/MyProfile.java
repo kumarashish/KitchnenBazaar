@@ -83,7 +83,9 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
        name.setText(profile.getName());
        location.setText(controller.getAddress());
        appVersion.setText("App Version : "+Utils.getAppVersion(MyProfile.this));
-       Picasso.with(MyProfile.this).load(controller.getUserProfil().getProfilePic()).placeholder(R.drawable.default_icon).into(profilePic);
+       if ((controller.getUserProfil().getProfilePic() != null) &&(controller.getUserProfil().getProfilePic().length()>0)) {
+           Picasso.with(MyProfile.this).load(controller.getUserProfil().getProfilePic()).placeholder(R.drawable.default_icon).into(profilePic);
+       }
    }
     @Override
     public void onClick(View view) {
@@ -135,19 +137,7 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
         }
         return "";
     }
-//    public String getImageBase64(String imageUrl) {
-//
-//        // File imageFile = new File(imageUrl);
-//        BitmapFactory.Options options = new BitmapFactory.Options();
-//        options.inSampleSize = 8;
-//        Bitmap myBitmap = BitmapFactory.decodeFile(imageUrl,options);
-//        ByteArrayOutputStream baos=new ByteArrayOutputStream();
-//        myBitmap.compress(Bitmap.CompressFormat.PNG,100, baos);
-//        byte [] b=baos.toByteArray();
-//        String temp= Base64.encodeToString(b, Base64.DEFAULT);
-//        System.out.print(temp);
-//        return temp;
-//    }
+
     public void uploadProfilePic(Uri uri)
     {progressBar.setVisibility(View.VISIBLE);
         String encodedImage = getBase64(uri);
