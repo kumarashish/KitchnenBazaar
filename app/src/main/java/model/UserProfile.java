@@ -64,4 +64,12 @@ public class UserProfile {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    public String getProfilePic() {
+        return profilePic;
+    }
+
+    public void setProfilePic(String profilePic) {
+        this.profilePic = profilePic;
+    }
 }

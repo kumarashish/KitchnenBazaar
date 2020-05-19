@@ -22,8 +22,10 @@ public class Common {
     public static String forgetPasswordUrl=baseUrl+"/user/getPassword";
     public static String registerUrl=baseUrl+"user/register";
     public static String profilePicUrl=baseUrl+"Image/UploadImage";
+    public static String changePassword=baseUrl+"user/ChangePassword";
     public static String loginKeys[]={"mobilenumber", "password"};
-    public static String forgetPasswordKeys[]={"mobilenumber"};
+    public static String forgetPasswordKeys[]={"userid"};
+    public static String changePasswordKeys[]={"userid","oldpassword","newpassword"};
     /*--------------------------------------------------------------*/
     public static String categoryTable="Category";
     public static String categoryColumn="CategoryType";

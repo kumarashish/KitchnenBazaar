@@ -94,6 +94,11 @@ public class PrefManager {
 
         editor.commit();
     }
+    public void setProfilePic(String url) {
+
+        editor.putString(Common.profilePic, url);
+        editor.commit();
+    }
 
     public void setRememberId(String remId, String pass) {
         editor.putString(rememberId, remId);

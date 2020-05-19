@@ -59,6 +59,7 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
     @BindView(R.id.profilePic)
     CircleImageView profilePic;
     String userId;
+    boolean isProfilePicChanged=false;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +85,13 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
         switch (view.getId())
         {
             case R.id.back:
-                onBackPressed();
+                if (isProfilePicChanged) {
+                    Intent in = new Intent();
+                    setResult(RESULT_OK, in);
+                    finish();
+                } else {
+                    onBackPressed();
+                }
                 break;
             case R.id.profilePic:
                 ImagePicker.Companion.with(this)
@@ -163,7 +170,10 @@ public class MyProfile extends Activity implements View.OnClickListener, WebApiR
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(MyProfile.this,value,Toast.LENGTH_SHORT).show();
+                if(Utils.getStatus(value,MyProfile.this)) {
+                    isProfilePicChanged = true;
+                    controller.setProfilePic(Utils.getValue(value,"imagePath"));
+                }
             }
         });
     }

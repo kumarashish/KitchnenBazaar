@@ -17,6 +17,8 @@ import android.widget.Toast;
 import com.kitchenbazaar.DashBoard;
 import com.kitchenbazaar.R;
 
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
@@ -177,5 +179,26 @@ public class Utils {
                         });
         builder.create().show();
         ;
+    }
+
+    public static boolean getStatus(String value, Activity act) {
+        try {
+            JSONObject jsonObject = new JSONObject(value);
+            Toast.makeText(act, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
+            return jsonObject.getBoolean("Status");
+        } catch (Exception ex) {
+            ex.fillInStackTrace();
+        }
+        return false;
+    }
+    public static String getValue(String value,String key) {
+        try {
+            JSONObject jsonObject = new JSONObject(value);
+
+            return jsonObject.getString(key);
+        } catch (Exception ex) {
+            ex.fillInStackTrace();
+        }
+        return "";
     }
 }

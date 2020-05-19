@@ -33,6 +33,7 @@ import com.backendless.IDataStore;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.backendless.persistence.DataQueryBuilder;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,6 +67,7 @@ int i=0;
     ArrayList<CategoryModel> trendList=new ArrayList<>();
      ImageView editLocation;
     ProgressBar progress;
+    ImageView profilePic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +104,8 @@ int i=0;
 
          navigationView = (NavigationView) findViewById(R.id.nav_view);
         View header=navigationView.inflateHeaderView(R.layout.nav_header_dash_board);
-       user_loggedin=(RelativeLayout)header.findViewById(R.id.user_loggedin);
+        profilePic=(ImageView)header.findViewById(R.id.profilePic);
+        user_loggedin=(RelativeLayout)header.findViewById(R.id.user_loggedin);
         user_notloggedin=(LinearLayout)header.findViewById(R.id.user_notloggedin);
          signUp_btn=(Button)header.findViewById(R.id.signUp_btn);
         login_btn=(Button)header.findViewById(R.id. login_btn);;
@@ -164,7 +167,7 @@ public void checkData()
         int id = item.getItemId();
 
         if (id == R.id.profile) {
-            startActivity(new Intent(this,MyProfile.class));
+            startActivityForResult(new Intent(this,MyProfile.class),5);
         }  else if (id == R.id.order) {
             startActivity(new Intent(this,CurrentOrder.class));
 
@@ -181,7 +184,7 @@ public void checkData()
 
         }
         else if (id == R.id.changePassword) {
-            startActivity(new Intent(this,ChangePassword.class));
+            startActivityForResult(new Intent(this,ChangePassword.class),1);
 
         }
         else if (id == R.id.delivery_address) {
@@ -290,17 +293,17 @@ public void updateheader()
         super.onActivityResult(requestCode, resultCode, data);
         if((requestCode==1)&&( resultCode==RESULT_OK))
         {
-          if(controller.isUserLoggedIn())
-          {
               updateheader();
-          }
         }else if ((requestCode==2)&&( resultCode==RESULT_OK))
         {
             updateheader();
         }else if((requestCode==3)||(requestCode==4))
         {
             checkData();
+        } else if ((requestCode == 5)) {
+            Picasso.with(DashBoard.this).load(controller.getUserProfil().getProfilePic()).into(profilePic);
         }
+
     }
     public void getData() {
         progress.setVisibility(View.VISIBLE);
@@ -416,5 +419,7 @@ public void updateheader()
         bottomSheet.setBackgroundResource(R.drawable.alert_bg);
         mBottomSheetDialog.show();
     }
+
+
 
 }

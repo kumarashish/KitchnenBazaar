@@ -75,7 +75,9 @@ public class AppController  extends Application{
     public void setUserProfile1(JSONObject user) {
         prefManager.setUserProfile(user);
     }
-
+    public void setProfilePic(String url) {
+        prefManager.setProfilePic(url);
+    }
     public UserProfile getUserProfil() {
         return prefManager.getUserProfile();
     }
