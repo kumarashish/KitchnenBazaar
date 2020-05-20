@@ -2,6 +2,7 @@ package com.kitchenbazaar;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -84,6 +85,11 @@ ArrayList<DeliveryAddressModel>addressListItems=new ArrayList<>();
 
     }
 
+    public void onBackPressed() {
+        Intent data = new Intent();
+        setResult(RESULT_OK, data);
+        finish();
+    }
     public void showAddressPopup() {
         final BottomSheetDialog mBottomSheetDialog = new BottomSheetDialog(DeliveryAddress.this);
         View sheetView = getLayoutInflater().inflate(R.layout.payment_popup, null);
@@ -259,12 +265,13 @@ ArrayList<DeliveryAddressModel>addressListItems=new ArrayList<>();
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-
+                                addressListView.setVisibility(View.VISIBLE);
                                 addressListView.setAdapter(new AddressAdapter(DeliveryAddress.this, addressListItems));
                                 noAddress.setVisibility(View.GONE);
                             }
                         });
                     }else{
+                        addressListView.setVisibility(View.GONE);
                         noAddress.setVisibility(View.VISIBLE);
                     }
 

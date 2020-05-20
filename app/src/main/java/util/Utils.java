@@ -184,7 +184,10 @@ public class Utils {
     public static boolean getStatus(String value, Activity act) {
         try {
             JSONObject jsonObject = new JSONObject(value);
-            Toast.makeText(act, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
+            String message=jsonObject.getString("message");
+            if((!message.equalsIgnoreCase("null"))) {
+                Toast.makeText(act,message , Toast.LENGTH_SHORT).show();
+            }
             return jsonObject.getBoolean("Status");
         } catch (Exception ex) {
             ex.fillInStackTrace();

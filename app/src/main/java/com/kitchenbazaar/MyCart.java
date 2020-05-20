@@ -49,6 +49,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import common.AppController;
 import common.Common;
+import interfaces.WebApiResponseCallback;
 import launchingscreens.Login;
 import model.DeliveryAddressModel;
 import model.OrderModel;
@@ -61,7 +62,7 @@ import util.Utils;
  * Created by ashish.kumar on 10-07-2018.
  */
 
-public class MyCart extends Activity implements View.OnClickListener{
+public class MyCart extends Activity implements View.OnClickListener, WebApiResponseCallback {
     AppController controller;
     @BindView(R.id.back)
     ImageView back;
@@ -88,6 +89,8 @@ public class MyCart extends Activity implements View.OnClickListener{
     ArrayList<DeliveryAddressModel>addressListItems=new ArrayList<>();
     DeliveryAddressModel model;
     String selectedSlot="";
+    Dialog dialog;
+
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mycart);
@@ -131,11 +134,13 @@ public class MyCart extends Activity implements View.OnClickListener{
                     if(addressListItems.size()>0) {
                         showAddressPopup();
                     }else {
-                        startActivityForResult(new Intent(MyCart.this,DeliveryAddress.class),2);
+                        startActivityForResult(new Intent(MyCart.this,DeliveryAddress.class),34);
                     }
 
                 }else{
-                    startActivityForResult(new Intent(MyCart.this, Login.class),34);
+                    Intent in=new Intent(MyCart.this, Login.class);
+                    in.putExtra("isCalledFromCart",true);
+                    startActivityForResult(in,34);
                 }
                 break;
         }
@@ -322,7 +327,7 @@ public class MyCart extends Activity implements View.OnClickListener{
 
     public void showAddressPopup()
     {
-        final Dialog dialog = new Dialog(this);
+        dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.address_alert);
         final Window window = dialog.getWindow();
@@ -335,12 +340,8 @@ public class MyCart extends Activity implements View.OnClickListener{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 model = addressListItems.get(position);
-                if (isDeliveryAvailable(Integer.parseInt(model.getPinCode()))) {
-                    dialog.cancel();
-                    showAlert();
-                }else{
-                    Toast.makeText(MyCart.this, "Sorry we are not delivering to entered pincode.Please select different address", Toast.LENGTH_SHORT).show();
-                }
+                isDeliveryAvailable(model.getPinCode());
+
             }
         });
         close.setOnClickListener(new View.OnClickListener() {
@@ -461,14 +462,10 @@ public class MyCart extends Activity implements View.OnClickListener{
     }
 
 
-    public boolean isDeliveryAvailable(int pincode)
-    {
-        boolean status=false;
-        if((pincode==800001)||(pincode==500089)||(pincode==500008)||(pincode==209625)||(pincode==209601)||(pincode==209203))
-        {
-            status=true;
-        }
-        return status;
+    public void isDeliveryAvailable(final String pincode)
+    { dialog.cancel();
+       progressDialog.show();
+       controller.getWebApiCall().postDataWithHeader(Common.getValidatePinCodeUrl,Common.pincodeKeys,new String[]{pincode},this);
     }
 
 
@@ -536,7 +533,41 @@ public class MyCart extends Activity implements View.OnClickListener{
         picker.getDatePicker().setMinDate(System.currentTimeMillis()+86400000);
         picker.show();
     }
+
+    @Override
+    public void onSucess(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                progressDialog.cancel();
+                if(Utils.getStatus(value,MyCart.this))
+                {
+
+                    showAlert();
+                }else {
+                    if(dialog!=null) {
+                        dialog.show();
+                    }
+                }
+
+            }
+        });
     }
+
+    @Override
+    public void onError(final String value) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                progressDialog.cancel();
+              Toast.makeText(MyCart.this,Utils.getValue(value,"message"),Toast.LENGTH_SHORT).show();
+              if(dialog!=null) {
+                  dialog.show();
+              }
+            }
+        });
+    }
+}
 
 
 

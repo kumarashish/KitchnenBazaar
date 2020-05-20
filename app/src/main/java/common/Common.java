@@ -24,10 +24,13 @@ public class Common {
     public static String registerUrl=baseUrl+"user/register";
     public static String profilePicUrl=baseUrl+"Image/UploadImage";
     public static String changePassword=baseUrl+"user/ChangePassword";
-    public static String getBanner=baseUrl+"/Image/GetBanner";
+    public static String getBanner=baseUrl+"Image/GetBanner";
+    public static String getValidatePinCodeUrl=baseUrl+"deliveryaddress/validatepincode";
+
     public static String loginKeys[]={"mobilenumber", "password"};
     public static String forgetPasswordKeys[]={"userid"};
     public static String changePasswordKeys[]={"userid","oldpassword","newpassword"};
+    public static String pincodeKeys[]={"pincode"};
     /*--------------------------------------------------------------*/
     public static String categoryTable="Category";
     public static String categoryColumn="CategoryType";

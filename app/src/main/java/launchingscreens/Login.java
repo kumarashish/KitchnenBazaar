@@ -46,6 +46,7 @@ public class Login  extends Activity implements View.OnClickListener, WebApiResp
     AppController controller;
     @BindView(R.id.progressbar)
     ProgressBar progressbar;
+    boolean isCalledFromCart=false;
 
 
 
@@ -59,6 +60,7 @@ public class Login  extends Activity implements View.OnClickListener, WebApiResp
         signUp.setOnClickListener(this);
         login.setOnClickListener(this);
         rememberme.setChecked(true);
+        isCalledFromCart=getIntent().getBooleanExtra("isCalledFromCart",false);
         if (controller.getRememberId().length() > 0) {
             emailId.setText(controller.getRememberId());
             password.setText(controller.getRememberpassword());
@@ -156,7 +158,11 @@ public class Login  extends Activity implements View.OnClickListener, WebApiResp
                 } else {
                     controller.setRememberId("", "");
                 }
-                startActivity(new Intent(Login.this, DashBoard.class));
+                if (isCalledFromCart) {
+                    handleResult();
+                } else {
+                    startActivity(new Intent(Login.this, DashBoard.class));
+                }
             }
         });
     }
@@ -171,6 +177,13 @@ public class Login  extends Activity implements View.OnClickListener, WebApiResp
                 enableAll();
             }
         });
+    }
+
+    public void handleResult()
+    {
+        Intent data = new Intent();
+        setResult(RESULT_OK, data);
+        finish();
     }
 
     }
